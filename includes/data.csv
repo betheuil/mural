@@ -1,69 +1,69 @@
 frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of regional sessions,category,subcategory,technology,risk,ports
-0.044,americas,100bao,21892490,0,0,428,0,general-internet,file-sharing,peer-to-peer,6,"tcp/3468, 6346, 11300"
-0.138,americas,1und1-mail,3956121161,0,1,131386,0,collaboration,email,browser-based,4,"tcp/80, 443"
-0.068,americas,2ch,420186303,0,0,12569,0,collaboration,social-networking,browser-based,4,tcp/80
-0.003,americas,2ch-posting,178505,0,0,53,0,collaboration,web-posting,browser-based,6,tcp/80
-0.236,americas,360-safeguard-update,71646335909,0,24,41274745,0.001,business-systems,software-update,client-server,3,"udp/dynamic, tcp/80, 8090"
-0.003,americas,3pc,2309,0,0,12,0,networking,ip-protocol,network-protocol,5,
-0.597,americas,4shared,2.57E+12,0,856,10542818,0,general-internet,file-sharing,browser-based,5,"tcp/80, 443"
-0.169,americas,51.com-base,852846611,0,0,13673,0,collaboration,social-networking,browser-based,5,"tcp/dynamic, 80"
-0.003,americas,51.com-bbs,51548,0,0,5,0,collaboration,web-posting,browser-based,6,tcp/80
-0.056,americas,51.com-games,6032266,0,0,1029,0,media,gaming,browser-based,4,tcp/80
-0.002,americas,51.com-music,252635,0,0,6,0,media,audio-streaming,browser-based,4,tcp/80
-0.001,americas,51.com-posting,3568,0,0,1,0,collaboration,web-posting,browser-based,8,tcp/80
-0.001,americas,absolute-manage,21870,0,0,1,0,business-systems,management,client-server,6,tcp/dynamic
-0.001,americas,access-grid,27203960,0,0,1100,0,collaboration,voip-video,client-server,7,"tcp/dynamic, udp/dynamic, tcp/80, 8000, 20000, 20200"
-0.054,americas,acronis-snapdeploy,11075353,0,0,35223,0,business-systems,management,client-server,4,"tcp/dynamic, udp/9876"
-0.682,americas,active-directory,1.20E+12,0,399,54171421,0.001,business-systems,auth-service,client-server,6,"tcp/1025-5000, tcp/135, 138, 389, 445, 464, 636, tcp/49152-65535, tcp/5722, 9389, udp/88, 123, 137, 138, 389, 445, 464, 2535"
-0.004,americas,activenet,6077,0,0,22,0,networking,ip-protocol,network-protocol,3,
-0.225,americas,activesync,5.86E+11,0,195,13424897,0,business-systems,general-business,client-server,7,"tcp/80, 443"
-0.014,americas,adnstream,635104581,0,0,781,0,media,photo-video,browser-based,6,tcp/80
-0.036,americas,adobe-connectnow-base,682414800,0,0,767,0,collaboration,internet-conferencing,browser-based,5,"tcp/80, 443, 1935"
-0.861,americas,adobe-flash-socketpolicy-server,10495394119,0,3,4197467,0,general-internet,internet-utility,client-server,7,"tcp/dynamic, 843"
-0.6,americas,adobe-media-player,1.11E+11,0,37,324609,0,media,photo-video,client-server,5,"tcp/80, 443"
-0.352,americas,adobe-meeting,2.27E+11,0,76,175507,0,collaboration,internet-conferencing,browser-based,7,"tcp/80, 443, 1935"
-0.023,americas,adobe-meeting-file-transfer,342515924,0,0,589,0,general-internet,file-sharing,browser-based,4,"tcp/80, 443, 1935"
-0.097,americas,adobe-meeting-remote-control,84233793006,0,28,1295,0,networking,remote-access,browser-based,5,"tcp/80, 443, 1935"
-0.013,americas,adobe-online-office,1678351,0,0,98,0,business-systems,office-programs,browser-based,4,"tcp/80, 443"
-0.955,americas,adobe-update,9.93E+12,0.002,3308,18989728,0,business-systems,software-update,client-server,4,tcp/80
-0.062,americas,adrive,33295141920,0,11,9093,0,general-internet,file-sharing,browser-based,5,"tcp/80, 443"
-0.005,americas,ad-selfservice,130001079,0,0,601,0,business-systems,auth-service,browser-based,1,"tcp/8888, 80"
-0.125,americas,afp,1.58E+12,0,527,262794,0,business-systems,storage-backup,client-server,7,"tcp/548, udp/548"
-0.03,americas,afreeca,2997162144,0,1,12605,0,media,photo-video,browser-based,7,"tcp/80, 1935, 8000-8150"
-0.376,americas,aim-base,15959320855,0,5,453780,0,collaboration,instant-messaging,client-server,6,"tcp/80, 443, 5190-5199"
-0.625,americas,aim-express-base,9799118714,0,3,665916,0,collaboration,instant-messaging,browser-based,2,"tcp/80, 443"
-0.005,americas,aim-express-file-transfer,12216088,0,0,13,0,general-internet,file-sharing,browser-based,6,tcp/80
-0.045,americas,aim-file-transfer,9120568542,0,3,803,0,general-internet,file-sharing,peer-to-peer,7,tcp/5190-5199
-0.656,americas,aim-mail,5.22E+11,0,174,8727713,0,collaboration,email,browser-based,6,"tcp/80, 443"
-0.004,americas,airtime,98276,0,0,10,0,collaboration,voip-video,browser-based,4,"tcp/dynamic, udp/dynamic"
-0.031,americas,air-video,193636196,0,0,734,0,media,audio-streaming,client-server,6,tcp/dynamic
-0.548,americas,akamai-client,6.27E+11,0,209,18079646,0,general-internet,file-sharing,client-server,7,"udp/3478, 80"
-0.345,americas,alisoft,710780422,0,0,38470,0,business-systems,management,browser-based,4,tcp/80
-0.077,americas,ali-wangwang-base,1110187389,0,0,357890,0,collaboration,instant-messaging,client-server,5,"tcp/dynamic, udp/dynamic, 80"
-0.012,americas,ali-wangwang-file-transfer,384494944,0,0,214,0,general-internet,file-sharing,client-server,8,"tcp/dynamic, udp/dynamic"
-0.088,americas,all-slots-casino,363961566,0,0,8666,0,media,gaming,client-server,3,"tcp/80, 443"
-0.109,americas,altiris,45629770262,0,15,13838874,0,business-systems,management,client-server,6,tcp/402
-0.195,americas,amazon-cloud-drive-base,85664890632,0,29,11459,0,general-internet,file-sharing,browser-based,5,"tcp/80, 443"
-0.217,americas,amazon-cloud-drive-uploading,73119979722,0,24,8148,0,general-internet,file-sharing,browser-based,7,tcp/443
-0.779,americas,amazon-cloud-player,50606350758,0,17,426691,0,media,audio-streaming,browser-based,8,"tcp/80, 443"
-0.427,americas,amazon-instant-video,6518210233,0,2,86918,0,media,photo-video,browser-based,6,tcp/80
-0.147,americas,amazon-unbox,1.61E+11,0,54,204571,0,media,photo-video,client-server,1,tcp/80
-0.007,americas,ameba-blog-posting,3637438,0,0,69,0,collaboration,web-posting,browser-based,6,tcp/80
-0.016,americas,ameba-now-base,45061998,0,0,1351,0,collaboration,social-networking,browser-based,7,tcp/80
-0.003,americas,ameba-now-posting,29693,0,0,7,0,collaboration,social-networking,browser-based,5,tcp/80
-0.084,americas,ammyy-admin,1406597409,0,0,151654,0,networking,remote-access,client-server,4,"tcp/80, 443"
-0.01,americas,amqp,2467433,0,0,304,0,business-systems,general-business,client-server,8,"tcp/5671, 5672"
-0.121,americas,android-market,3.66E+11,0,122,138041,0,general-internet,internet-utility,client-server,8,"tcp/80, 443"
-0.005,americas,ants-p2p,5472287,0,0,174,0,general-internet,file-sharing,peer-to-peer,6,"udp/dynamic, tcp/80, 443, 6667"
-0.093,americas,aol-proxy,24066094958,0,8,57707,0,networking,proxy-tunnels,client-server,8,"tcp/80, 5192, 5190"
-0.043,americas,apache-jserv,3.68E+12,0.001,1226,12363997,0,general-internet,internet-utility,client-server,4,tcp/8009
-0.013,americas,apc-powerchute,222412905,0,0,109246,0,business-systems,general-business,client-server,6,"tcp/2260, udp/3052"
-0.225,americas,apple-airport,46070825,0,0,694144,0,networking,infrastructure,network-protocol,5,udp/192
-0.568,americas,apple-appstore,3.67E+12,0.001,1223,2296608,0,general-internet,internet-utility,client-server,6,"tcp/dynamic, tcp/80, 443"
-0.071,americas,apple-location-service,8438148,0,0,2788,0,general-internet,internet-utility,browser-based,5,tcp/80
-0.805,americas,apple-push-notifications,1.93E+11,0,64,24448751,0,general-internet,internet-utility,client-server,1,"tcp/5223, 443"
-0.829,americas,apple-update,1.35E+13,0.003,4499,23168689,0,business-systems,software-update,client-server,7,tcp/80
-0.533,americas,apt-get,2.86E+12,0.001,954,3125327,0,business-systems,management,client-server,1,tcp/80
-0.302,americas,arcgis,6.17E+11,0,206,5118157,0,business-systems,general-business,browser-based,3,"tcp/80, 8399"
-0.012,americas,arcserve,5.60E+11,0,187,6031,0,networking,infrastructure,client-server,6,"tcp/6050, 445, 139, 111, udp/6050"
-0.431,americas,ares,91515135776,0,31,58835539,0.001,general-internet,file-sharing,peer-to-peer,2,"tcp/32285, 6000, 6346-6351, udp/6346-6351"
+0.044,americas,"Akram, Haroon",1,0,0,428,0,general-internet,file-sharing,peer-to-peer,6,"tcp/3468, 6346, 11300"
+0.138,americas,"Al-Abdulla, Maysera",1,0,1,131386,0,collaboration,email,browser-based,4,"tcp/80, 443"
+0.068,americas,"Bak, Alice",1,0,0,12569,0,collaboration,social-networking,browser-based,4,tcp/80
+0.003,americas,"Baker, Leonie",1,0,0,53,0,collaboration,web-posting,browser-based,6,tcp/80
+0.236,americas,"Barnes, Rosie",1,0,24,41274745,0.001,business-systems,software-update,client-server,3,"udp/dynamic, tcp/80, 8090"
+0.003,americas,"Bell, Rebecca",1,0,0,12,0,networking,ip-protocol,network-protocol,5,
+0.597,americas,"Betheuil, Christian",1,0,856,10542818,0,general-internet,file-sharing,browser-based,5,"tcp/80, 443"
+0.169,americas,"Bossie, Kate",1,0,0,13673,0,collaboration,social-networking,browser-based,5,"tcp/dynamic, 80"
+0.003,americas,"Botterill, Georgina",1,0,0,5,0,collaboration,web-posting,browser-based,6,tcp/80
+0.056,americas,"Brooks, Ben",1,0,0,1029,0,media,gaming,browser-based,4,tcp/80
+0.002,americas,"Burrill, Eleanor",1,0,0,6,0,media,audio-streaming,browser-based,4,tcp/80
+0.001,americas,"Carey, Andrew N",1,0,0,1,0,collaboration,web-posting,browser-based,8,tcp/80
+0.001,americas,"Cave, Matt X",1,0,0,1,0,business-systems,management,client-server,6,tcp/dynamic
+0.001,americas,"Clark, Hugo",1,0,0,1100,0,collaboration,voip-video,client-server,7,"tcp/dynamic, udp/dynamic, tcp/80, 8000, 20000, 20200"
+0.054,americas,"Crook, Michael",1,0,0,35223,0,business-systems,management,client-server,4,"tcp/dynamic, udp/9876"
+0.682,americas,"Daniell, James",1,0,399,54171421,0.001,business-systems,auth-service,client-server,6,"tcp/1025-5000, tcp/135, 138, 389, 445, 464, 636, tcp/49152-65535, tcp/5722, 9389, udp/88, 123, 137, 138, 389, 445, 464, 2535"
+0.004,americas,"Darby, Henry",1,0,0,22,0,networking,ip-protocol,network-protocol,3,
+0.225,americas,"Davies, Alistair",1,0,195,13424897,0,business-systems,general-business,client-server,7,"tcp/80, 443"
+0.014,americas,"Dhaliwal, Selina",1,0,0,781,0,media,photo-video,browser-based,6,tcp/80
+0.036,americas,"Drake, Lizzy",1,0,0,767,0,collaboration,internet-conferencing,browser-based,5,"tcp/80, 443, 1935"
+0.861,americas,"Dudley, Scott",1,0,3,4197467,0,general-internet,internet-utility,client-server,7,"tcp/dynamic, 843"
+0.6,americas,"Duerden, Luke",1,0,37,324609,0,media,photo-video,client-server,5,"tcp/80, 443"
+0.352,americas,"Dullage, Hugh",1,0,76,175507,0,collaboration,internet-conferencing,browser-based,7,"tcp/80, 443, 1935"
+0.023,americas,"Eisner, Max",1,0,0,589,0,general-internet,file-sharing,browser-based,4,"tcp/80, 443, 1935"
+0.097,americas,"Eley, Jonathan",1,0,28,1295,0,networking,remote-access,browser-based,5,"tcp/80, 443, 1935"
+0.013,americas,"Folan, Michael",1,0,0,98,0,business-systems,office-programs,browser-based,4,"tcp/80, 443"
+0.955,americas,"Fonte, Joao",1,0.002,3308,18989728,0,business-systems,software-update,client-server,4,tcp/80
+0.062,americas,"Green, Nicholas",1,0,11,9093,0,general-internet,file-sharing,browser-based,5,"tcp/80, 443"
+0.005,americas,"Hall, Sarah",1,0,0,601,0,business-systems,auth-service,browser-based,1,"tcp/8888, 80"
+0.125,americas,"Handby, Claire",1,0,527,262794,0,business-systems,storage-backup,client-server,7,"tcp/548, udp/548"
+0.03,americas,"Hartley, Nic",1,0,1,12605,0,media,photo-video,browser-based,7,"tcp/80, 1935, 8000-8150"
+0.376,americas,"Hirst, Alister",1,0,5,453780,0,collaboration,instant-messaging,client-server,6,"tcp/80, 443, 5190-5199"
+0.625,americas,"Hui, Ching-Yee",1,0,3,665916,0,collaboration,instant-messaging,browser-based,2,"tcp/80, 443"
+0.005,americas,"Jones, Gareth D",1,0,0,13,0,general-internet,file-sharing,browser-based,6,tcp/80
+0.045,americas,"Kaya, Sez",1,0,3,803,0,general-internet,file-sharing,peer-to-peer,7,tcp/5190-5199
+0.656,americas,"Kazi, Hari",1,0,174,8727713,0,collaboration,email,browser-based,6,"tcp/80, 443"
+0.004,americas,"Lee, Harriet",1,0,0,10,0,collaboration,voip-video,browser-based,4,"tcp/dynamic, udp/dynamic"
+0.031,americas,"Lewis, Richard A",1,0,0,734,0,media,audio-streaming,client-server,6,tcp/dynamic
+0.548,americas,"Lowry, Katie",1,0,209,18079646,0,general-internet,file-sharing,client-server,7,"udp/3478, 80"
+0.345,americas,"Marx, Alexander",1,0,0,38470,0,business-systems,management,browser-based,4,tcp/80
+0.077,americas,"McCullough, Brendan",1,0,0,357890,0,collaboration,instant-messaging,client-server,5,"tcp/dynamic, udp/dynamic, 80"
+0.012,americas,"McMillan, Russell",1,0,0,214,0,general-internet,file-sharing,client-server,8,"tcp/dynamic, udp/dynamic"
+0.088,americas,"McNabb, Louise",1,0,0,8666,0,media,gaming,client-server,3,"tcp/80, 443"
+0.109,americas,"Merrick, David",1,0,15,13838874,0,business-systems,management,client-server,6,tcp/402
+0.195,americas,"Morley, Jon",1,0,29,11459,0,general-internet,file-sharing,browser-based,5,"tcp/80, 443"
+0.217,americas,"O'Shaughnessy, Claire",1,0,24,8148,0,general-internet,file-sharing,browser-based,7,tcp/443
+0.779,americas,"Palmer, Guy",1,0,17,426691,0,media,audio-streaming,browser-based,8,"tcp/80, 443"
+0.427,americas,"Petrelis, Alex",1,0,2,86918,0,media,photo-video,browser-based,6,tcp/80
+0.147,americas,"Powell, Lucy",1,0,54,204571,0,media,photo-video,client-server,1,tcp/80
+0.007,americas,"Rigby, Adam",1,0,0,69,0,collaboration,web-posting,browser-based,6,tcp/80
+0.016,americas,"Robinson, Chris X",1,0,0,1351,0,collaboration,social-networking,browser-based,7,tcp/80
+0.003,americas,"Rubio, Francisco",1,0,0,7,0,collaboration,social-networking,browser-based,5,tcp/80
+0.084,americas,"Salisbury, Greg",1,0,0,151654,0,networking,remote-access,client-server,4,"tcp/80, 443"
+0.01,americas,"Scopes, Robert",1,0,0,304,0,business-systems,general-business,client-server,8,"tcp/5671, 5672"
+0.121,americas,"Shilton, Nigel",1,0,122,138041,0,general-internet,internet-utility,client-server,8,"tcp/80, 443"
+0.005,americas,"Simon, Peter",1,0,0,174,0,general-internet,file-sharing,peer-to-peer,6,"udp/dynamic, tcp/80, 443, 6667"
+0.093,americas,"Smith, Victoria",1,0,8,57707,0,networking,proxy-tunnels,client-server,8,"tcp/80, 5192, 5190"
+0.043,americas,"Stefanopoulos, Georgios",1,0.001,1226,12363997,0,general-internet,internet-utility,client-server,4,tcp/8009
+0.013,americas,"Tan, Loh",1,0,0,109246,0,business-systems,general-business,client-server,6,"tcp/2260, udp/3052"
+0.225,americas,"Tatar, Serkan",1,0,0,694144,0,networking,infrastructure,network-protocol,5,udp/192
+0.568,americas,"Tsarouchis, Alexandros",1,0.001,1223,2296608,0,general-internet,internet-utility,client-server,6,"tcp/dynamic, tcp/80, 443"
+0.071,americas,"Urena Nieto, Carlos",1,0,0,2788,0,general-internet,internet-utility,browser-based,5,tcp/80
+0.805,americas,"Vergallo, Vanessa",1,0,64,24448751,0,general-internet,internet-utility,client-server,1,"tcp/5223, 443"
+0.829,americas,"Vincent, Charlie",1,0.003,4499,23168689,0,business-systems,software-update,client-server,7,tcp/80
+0.533,americas,"Wall, Stevi",1,0.001,954,3125327,0,business-systems,management,client-server,1,tcp/80
+0.302,americas,"Ward-Corderoy, Sophie",1,0,206,5118157,0,business-systems,general-business,browser-based,3,"tcp/80, 8399"
+0.012,americas,"White, Mike",1,0,187,6031,0,networking,infrastructure,client-server,6,"tcp/6050, 445, 139, 111, udp/6050"
+0.431,americas,"Zafar, Daniyal",1,0,31,58835539,0.001,general-internet,file-sharing,peer-to-peer,2,"tcp/32285, 6000, 6346-6351, udp/6346-6351"
