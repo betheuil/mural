@@ -6,8 +6,8 @@
 	
 	var rp=d3.select("#riskpanel").html();
 
-	var regions=["americas","europe","japan","asiapacific","global"];
-	var regionHash={"VAPA":"americas","P&D":"europe","REC":"japan","CPA":"asiapacific","All":"global"}
+	var regions=["americas","europe","REC","asiapacific","global"];
+	var regionHash={"VAPA":"americas","P&D":"europe","REC":"REC","CPA":"asiapacific","All":"global"}
 	var interface={
 		buttons:{
 		applications:[
@@ -698,7 +698,7 @@
 		var psb=pan.svg.select("#back")
 		psb.selectAll("*").remove();
 		pan.svg.selectAll(".labels").remove();	
-		psb.append("rect").attr({height:height,width:width}).style({fill:"white",stroke:"none"}).classed("backrect",1)
+		psb.append("rect").attr({height:height,width:width}).style({fill:"black",stroke:"none"}).classed("backrect",1)
 		if(mode==0) {
 			psb.append("text").text("Size of circle indicates").attr({x:800,y:310,"text-anchor":"middle"})
 			psb.append("text").text(pan.main=="applications"?"total bandwidth occupied":"number of detections").attr({x:800,y:322,"text-anchor":"middle"})
@@ -1137,15 +1137,15 @@ pan.setInterface = function() {
 	
 		d3.select("#select_region").property("value","Worldwide").on("change",function() {
 			// d3.select("#sidebar").selectAll("a").classed("active",0)
-			var v=d3.select(this).property("selectedIndex");
-			pan.criteria["region"]=["global","americas","europe","asiapacific","japan"][v];
+			// var v=d3.select(this).property("selectedIndex");
+			pan.criteria["region"]=["global","americas","europe","asiapacific","REC"][v];
 			pan.filter(pan.criteria);
 			pan.drawview(pan.mode);
 		})
 
 		d3.select("#select_dataset").property("value","All Applications").on("change",function() {
 			// d3.select("#sidebar").selectAll("a").classed("active",0)
-			var v=d3.select(this).property("selectedIndex");
+			// var v=d3.select(this).property("selectedIndex");
 			pan.setInterface();
 			if(v<7) {
 				if (pan.main!="applications") {

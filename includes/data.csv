@@ -3862,75 +3862,75 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.005,asiapacific,51.com-posting,66309,0,0,17,0,collaboration,web-posting,browser-based,2,tcp/80
 0.018,asiapacific,51.com-bbs,14423532,0,0,329,0,collaboration,web-posting,browser-based,2,tcp/80
 0.005,asiapacific,2ch-posting,263593,0,0,80,0,collaboration,web-posting,browser-based,2,tcp/80
-0.003,japan,"Akram, Haroon",2.75805E+11,0.014492754,1,4,0,media,audio-streaming,browser-based,6,Assistant Director
-0.02,japan,"Al-Abdulla, Maysera",2.75805E+11,0.014492754,1,601,0,media,audio-streaming,client-server,4,Assistant Manager
-0.612,japan,"Bak, Alice",2.75805E+11,0.014492754,1,17360,0,media,audio-streaming,browser-based,4,Assistant Manager
-0.003,japan,"Baker, Leonie",2.75805E+11,0.014492754,1,1,0,media,audio-streaming,client-server,6,Assistant Director
-0.06,japan,"Barnes, Rosie",2.75805E+11,0.014492754,1,222,0,media,audio-streaming,browser-based,3,Senior Associate
-0.01,japan,"Bell, Rebecca",2.75805E+11,0.014492754,1,272,0,media,audio-streaming,browser-based,5,Manager
-0.01,japan,"Betheuil, Christian",2.75805E+11,0.014492754,1,203,0,media,audio-streaming,client-server,5,Manager
-0.171,japan,"Bossie, Kate",2.75805E+11,0.014492754,1,76789,0,media,audio-streaming,browser-based,5,Manager
-0.863,japan,"Botterill, Georgina",2.75805E+11,0.014492754,1,1234209,0,media,audio-streaming,browser-based,6,Assistant Director
-0.104,japan,"Brooks, Ben",2.75805E+11,0.014492754,1,997,0,media,audio-streaming,browser-based,4,Assistant Manager
-0.696,japan,"Burrill, Eleanor",2.75805E+11,0.014492754,1,2842890,0,media,audio-streaming,client-server,4,Assistant Manager
-0.308,japan,"Carey, Andrew N",2.75805E+11,0.014492754,1,24205,0,media,audio-streaming,client-server,8,Partner
-0.037,japan,"Cave, Matt X",2.75805E+11,0.014492754,1,354,0,media,audio-streaming,browser-based,6,Assistant Director
-0.007,japan,"Clark, Hugo",2.75805E+11,0.014492754,1,17,0,media,audio-streaming,client-server,7,Director
-0.298,japan,"Crook, Michael",2.75805E+11,0.014492754,1,11129,0,media,audio-streaming,browser-based,4,Assistant Manager
-0.177,japan,"Daniell, James",2.75805E+11,0.014492754,1,27597,0,media,audio-streaming,browser-based,6,Assistant Director
-0.047,japan,"Darby, Henry",2.75805E+11,0.014492754,1,459,0,media,audio-streaming,browser-based,3,Senior Associate
-0.023,japan,"Davies, Alistair",2.75805E+11,0.014492754,1,141,0,media,audio-streaming,browser-based,7,Director
-0.09,japan,"Dhaliwal, Selina",2.75805E+11,0.014492754,1,1578,0,media,audio-streaming,browser-based,6,Assistant Director
-0.488,japan,"Drake, Lizzy",2.75805E+11,0.014492754,1,497923,0,media,audio-streaming,browser-based,5,Manager
-0.181,japan,"Dudley, Scott",2.75805E+11,0.014492754,1,260917,0,media,audio-streaming,client-server,7,Director
-0.09,japan,"Duerden, Luke",2.75805E+11,0.014492754,1,2378,0,media,audio-streaming,browser-based,5,Manager
-0.007,japan,"Dullage, Hugh",2.75805E+11,0.014492754,1,3,0,media,audio-streaming,client-server,7,Director
-0.003,japan,"Eisner, Max",2.75805E+11,0.014492754,1,1,0,media,audio-streaming,browser-based,4,Assistant Manager
-0.271,japan,"Eley, Jonathan",2.75805E+11,0.014492754,1,8602,0,media,audio-streaming,client-server,5,Manager
-0.003,japan,"Folan, Michael",2.75805E+11,0.014492754,1,14,0,media,audio-streaming,browser-based,4,Assistant Manager
-0.03,japan,"Fonte, Joao",2.75805E+11,0.014492754,1,1648,0,media,audio-streaming,client-server,4,Assistant Manager
-0.01,japan,"Green, Nicholas",2.75805E+11,0.014492754,1,41,0,media,audio-streaming,browser-based,5,Manager
-0.003,japan,"Hall, Sarah",2.75805E+11,0.014492754,1,1,0,media,audio-streaming,browser-based,1,Executive Assistant
-0.003,japan,"Handby, Claire",2.75805E+11,0.014492754,1,5,0,media,audio-streaming,browser-based,7,Director
-0.441,japan,"Hartley, Nic",2.75805E+11,0.014492754,1,13036011,0.001,business-systems,auth-service,client-server,7,Director
-0.007,japan,"Hirst, Alister",2.75805E+11,0.014492754,1,457,0,business-systems,auth-service,client-server,6,Assistant Director
-0.542,japan,"Hui, Ching-Yee",2.75805E+11,0.014492754,1,82858369,0.006,business-systems,auth-service,client-server,2,Associate
-0.669,japan,"Jones, Gareth D",2.75805E+11,0.014492754,1,106454633,0.008,business-systems,auth-service,client-server,6,Assistant Director
-0.431,japan,"Kaya, Sez",2.75805E+11,0.014492754,1,12493171,0.001,business-systems,auth-service,client-server,7,Director
-0.197,japan,"Kazi, Hari",2.75805E+11,0.014492754,1,1542940,0,business-systems,auth-service,client-server,6,Assistant Director
-0.003,japan,"Lee, Harriet",2.75805E+11,0.014492754,1,32,0,business-systems,auth-service,client-server,4,Assistant Manager
-0.017,japan,"Lewis, Richard A",2.75805E+11,0.014492754,1,21266,0,business-systems,auth-service,client-server,6,Assistant Director
-0,japan,"Lowry, Katie",2.75805E+11,0.014492754,1,12,0,custom,custom,custom,7,Director
-0.054,japan,"Marx, Alexander",2.75805E+11,0.014492754,1,634124,0,business-systems,database,client-server,4,Assistant Manager
-0.013,japan,"McCullough, Brendan",2.75805E+11,0.014492754,1,12,0,business-systems,database,network-protocol,5,Manager
-0.017,japan,"McMillan, Russell",2.75805E+11,0.014492754,1,146,0,business-systems,database,client-server,8,Partner
-0.127,japan,"McNabb, Louise",2.75805E+11,0.014492754,1,5575,0,business-systems,database,client-server,3,Senior Associate
-0.017,japan,"Merrick, David",2.75805E+11,0.014492754,1,8251,0,business-systems,database,client-server,6,Assistant Director
-0.003,japan,"Morley, Jon",2.75805E+11,0.014492754,1,17,0,business-systems,database,client-server,5,Manager
-0.324,japan,"O'Shaughnessy, Claire",2.75805E+11,0.014492754,1,16989399,0.001,business-systems,database,client-server,7,Director
-0.385,japan,"Palmer, Guy",2.75805E+11,0.014492754,1,97748,0,business-systems,database,client-server,8,Partner
-0.161,japan,"Petrelis, Alex",2.75805E+11,0.014492754,1,155030,0,business-systems,database,client-server,6,Assistant Director
-0.365,japan,"Powell, Lucy",2.75805E+11,0.014492754,1,19788781,0.001,business-systems,database,client-server,1,Executive Assistant
-0.033,japan,"Rigby, Adam",2.75805E+11,0.014492754,1,3590300,0,business-systems,database,browser-based,6,Assistant Director
-0.137,japan,"Robinson, Chris X",2.75805E+11,0.014492754,1,16373375,0.001,business-systems,database,client-server,7,Director
-0.043,japan,"Rubio, Francisco",2.75805E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager
-0.003,japan,"Salisbury, Greg",2.75805E+11,0.014492754,1,82,0,collaboration,email,browser-based,4,Assistant Manager
-0.284,japan,"Scopes, Robert",2.75805E+11,0.014492754,1,103855,0,business-systems,email,browser-based,8,Partner
-0.284,japan,"Scopes, Robert",2.75805E+11,0.014492754,1,103855,0,collaboration,email,browser-based,8,Partner
-0.017,japan,"Shilton, Nigel",2.75805E+11,0.014492754,1,504,0,collaboration,email,client-server,8,Partner
-0.003,japan,"Simon, Peter",2.75805E+11,0.014492754,1,4,0,collaboration,email,browser-based,6,Assistant Director
-0.01,japan,"Smith, Victoria",2.75805E+11,0.014492754,1,1800,0,collaboration,email,browser-based,8,Partner
-0.003,japan,"Stefanopoulos, Georgios",2.75805E+11,0.014492754,1,92,0,collaboration,email,browser-based,4,Assistant Manager
-0.234,japan,"Tan, Loh",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director
-0.234,japan,"Tatar, Serkan",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,5,Manager
-0.234,japan,"Tsarouchis, Alexandros",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director
-0.234,japan,"Urena Nieto, Carlos",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,5,Manager
-0.234,japan,"Vergallo, Vanessa",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,1,Executive Assistant
-0.234,japan,"Vincent, Charlie",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,7,Director
-0.234,japan,"Wall, Stevi",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,1,Executive Assistant
-0.234,japan,"Ward-Corderoy, Sophie",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,3,Senior Associate
-0.234,japan,"White, Mike",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director
-0.234,japan,"Zafar, Daniyal",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,2,Associate
+0.003,REC,"Akram, Haroon",2.75805E+11,0.014492754,1,4,0,media,audio-streaming,browser-based,6,Assistant Director
+0.02,REC,"Al-Abdulla, Maysera",2.75805E+11,0.014492754,1,601,0,media,audio-streaming,client-server,4,Assistant Manager
+0.612,REC,"Bak, Alice",2.75805E+11,0.014492754,1,17360,0,media,audio-streaming,browser-based,4,Assistant Manager
+0.003,REC,"Baker, Leonie",2.75805E+11,0.014492754,1,1,0,media,audio-streaming,client-server,6,Assistant Director
+0.06,REC,"Barnes, Rosie",2.75805E+11,0.014492754,1,222,0,media,audio-streaming,browser-based,3,Senior Associate
+0.01,REC,"Bell, Rebecca",2.75805E+11,0.014492754,1,272,0,media,audio-streaming,browser-based,5,Manager
+0.01,REC,"Betheuil, Christian",2.75805E+11,0.014492754,1,203,0,media,audio-streaming,client-server,5,Manager
+0.171,REC,"Bossie, Kate",2.75805E+11,0.014492754,1,76789,0,media,audio-streaming,browser-based,5,Manager
+0.863,REC,"Botterill, Georgina",2.75805E+11,0.014492754,1,1234209,0,media,audio-streaming,browser-based,6,Assistant Director
+0.104,REC,"Brooks, Ben",2.75805E+11,0.014492754,1,997,0,media,audio-streaming,browser-based,4,Assistant Manager
+0.696,REC,"Burrill, Eleanor",2.75805E+11,0.014492754,1,2842890,0,media,audio-streaming,client-server,4,Assistant Manager
+0.308,REC,"Carey, Andrew N",2.75805E+11,0.014492754,1,24205,0,media,audio-streaming,client-server,8,Partner
+0.037,REC,"Cave, Matt X",2.75805E+11,0.014492754,1,354,0,media,audio-streaming,browser-based,6,Assistant Director
+0.007,REC,"Clark, Hugo",2.75805E+11,0.014492754,1,17,0,media,audio-streaming,client-server,7,Director
+0.298,REC,"Crook, Michael",2.75805E+11,0.014492754,1,11129,0,media,audio-streaming,browser-based,4,Assistant Manager
+0.177,REC,"Daniell, James",2.75805E+11,0.014492754,1,27597,0,media,audio-streaming,browser-based,6,Assistant Director
+0.047,REC,"Darby, Henry",2.75805E+11,0.014492754,1,459,0,media,audio-streaming,browser-based,3,Senior Associate
+0.023,REC,"Davies, Alistair",2.75805E+11,0.014492754,1,141,0,media,audio-streaming,browser-based,7,Director
+0.09,REC,"Dhaliwal, Selina",2.75805E+11,0.014492754,1,1578,0,media,audio-streaming,browser-based,6,Assistant Director
+0.488,REC,"Drake, Lizzy",2.75805E+11,0.014492754,1,497923,0,media,audio-streaming,browser-based,5,Manager
+0.181,REC,"Dudley, Scott",2.75805E+11,0.014492754,1,260917,0,media,audio-streaming,client-server,7,Director
+0.09,REC,"Duerden, Luke",2.75805E+11,0.014492754,1,2378,0,media,audio-streaming,browser-based,5,Manager
+0.007,REC,"Dullage, Hugh",2.75805E+11,0.014492754,1,3,0,media,audio-streaming,client-server,7,Director
+0.003,REC,"Eisner, Max",2.75805E+11,0.014492754,1,1,0,media,audio-streaming,browser-based,4,Assistant Manager
+0.271,REC,"Eley, Jonathan",2.75805E+11,0.014492754,1,8602,0,media,audio-streaming,client-server,5,Manager
+0.003,REC,"Folan, Michael",2.75805E+11,0.014492754,1,14,0,media,audio-streaming,browser-based,4,Assistant Manager
+0.03,REC,"Fonte, Joao",2.75805E+11,0.014492754,1,1648,0,media,audio-streaming,client-server,4,Assistant Manager
+0.01,REC,"Green, Nicholas",2.75805E+11,0.014492754,1,41,0,media,audio-streaming,browser-based,5,Manager
+0.003,REC,"Hall, Sarah",2.75805E+11,0.014492754,1,1,0,media,audio-streaming,browser-based,1,Executive Assistant
+0.003,REC,"Handby, Claire",2.75805E+11,0.014492754,1,5,0,media,audio-streaming,browser-based,7,Director
+0.441,REC,"Hartley, Nic",2.75805E+11,0.014492754,1,13036011,0.001,business-systems,auth-service,client-server,7,Director
+0.007,REC,"Hirst, Alister",2.75805E+11,0.014492754,1,457,0,business-systems,auth-service,client-server,6,Assistant Director
+0.542,REC,"Hui, Ching-Yee",2.75805E+11,0.014492754,1,82858369,0.006,business-systems,auth-service,client-server,2,Associate
+0.669,REC,"Jones, Gareth D",2.75805E+11,0.014492754,1,106454633,0.008,business-systems,auth-service,client-server,6,Assistant Director
+0.431,REC,"Kaya, Sez",2.75805E+11,0.014492754,1,12493171,0.001,business-systems,auth-service,client-server,7,Director
+0.197,REC,"Kazi, Hari",2.75805E+11,0.014492754,1,1542940,0,business-systems,auth-service,client-server,6,Assistant Director
+0.003,REC,"Lee, Harriet",2.75805E+11,0.014492754,1,32,0,business-systems,auth-service,client-server,4,Assistant Manager
+0.017,REC,"Lewis, Richard A",2.75805E+11,0.014492754,1,21266,0,business-systems,auth-service,client-server,6,Assistant Director
+0,REC,"Lowry, Katie",2.75805E+11,0.014492754,1,12,0,custom,custom,custom,7,Director
+0.054,REC,"Marx, Alexander",2.75805E+11,0.014492754,1,634124,0,business-systems,database,client-server,4,Assistant Manager
+0.013,REC,"McCullough, Brendan",2.75805E+11,0.014492754,1,12,0,business-systems,database,network-protocol,5,Manager
+0.017,REC,"McMillan, Russell",2.75805E+11,0.014492754,1,146,0,business-systems,database,client-server,8,Partner
+0.127,REC,"McNabb, Louise",2.75805E+11,0.014492754,1,5575,0,business-systems,database,client-server,3,Senior Associate
+0.017,REC,"Merrick, David",2.75805E+11,0.014492754,1,8251,0,business-systems,database,client-server,6,Assistant Director
+0.003,REC,"Morley, Jon",2.75805E+11,0.014492754,1,17,0,business-systems,database,client-server,5,Manager
+0.324,REC,"O'Shaughnessy, Claire",2.75805E+11,0.014492754,1,16989399,0.001,business-systems,database,client-server,7,Director
+0.385,REC,"Palmer, Guy",2.75805E+11,0.014492754,1,97748,0,business-systems,database,client-server,8,Partner
+0.161,REC,"Petrelis, Alex",2.75805E+11,0.014492754,1,155030,0,business-systems,database,client-server,6,Assistant Director
+0.365,REC,"Powell, Lucy",2.75805E+11,0.014492754,1,19788781,0.001,business-systems,database,client-server,1,Executive Assistant
+0.033,REC,"Rigby, Adam",2.75805E+11,0.014492754,1,3590300,0,business-systems,database,browser-based,6,Assistant Director
+0.137,REC,"Robinson, Chris X",2.75805E+11,0.014492754,1,16373375,0.001,business-systems,database,client-server,7,Director
+0.043,REC,"Rubio, Francisco",2.75805E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager
+0.003,REC,"Salisbury, Greg",2.75805E+11,0.014492754,1,82,0,collaboration,email,browser-based,4,Assistant Manager
+0.284,REC,"Scopes, Robert",2.75805E+11,0.014492754,1,103855,0,business-systems,email,browser-based,8,Partner
+0.284,REC,"Scopes, Robert",2.75805E+11,0.014492754,1,103855,0,collaboration,email,browser-based,8,Partner
+0.017,REC,"Shilton, Nigel",2.75805E+11,0.014492754,1,504,0,collaboration,email,client-server,8,Partner
+0.003,REC,"Simon, Peter",2.75805E+11,0.014492754,1,4,0,collaboration,email,browser-based,6,Assistant Director
+0.01,REC,"Smith, Victoria",2.75805E+11,0.014492754,1,1800,0,collaboration,email,browser-based,8,Partner
+0.003,REC,"Stefanopoulos, Georgios",2.75805E+11,0.014492754,1,92,0,collaboration,email,browser-based,4,Assistant Manager
+0.234,REC,"Tan, Loh",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director
+0.234,REC,"Tatar, Serkan",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,5,Manager
+0.234,REC,"Tsarouchis, Alexandros",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director
+0.234,REC,"Urena Nieto, Carlos",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,5,Manager
+0.234,REC,"Vergallo, Vanessa",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,1,Executive Assistant
+0.234,REC,"Vincent, Charlie",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,7,Director
+0.234,REC,"Wall, Stevi",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,1,Executive Assistant
+0.234,REC,"Ward-Corderoy, Sophie",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,3,Senior Associate
+0.234,REC,"White, Mike",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director
+0.234,REC,"Zafar, Daniyal",2.75805E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,2,Associate
 0.918,global,http-audio,6.82893E+13,0.005,22763,49654315,0,media,audio-streaming,browser-based,5,tcp/80
 0.857,global,itunes-base,5.95042E+13,0.005,19835,116809533,0.001,media,audio-streaming,client-server,3,"tcp/80, 443"
 0.676,global,amazon-cloud-player,62966538539,0,21,619692,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
