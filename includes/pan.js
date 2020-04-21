@@ -905,8 +905,8 @@
 				var dist=Math.sqrt((x-cx)*(x-cx)+(y-cy)*(y-cy))
 				
 				if (dist>max) {
-					x=cx+(max/dist)*(x-cx);
-					y=cy+(max/dist)*(y-cy);
+					x=cx-(max/dist)*(x-cx);
+					y=cy-(max/dist)*(y-cy);
 				}
 				d3.select(this).attr({cx:x,cy:y}) 
 			}
