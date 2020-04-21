@@ -35,7 +35,7 @@
 	var subcats=[];
 	var threatTypes=["exploit","malware"];
 
-	var riskColors={"-":"#ccc",1:"#67A2B9",2:"#A7C439",3:"#FFC425",4:"#F6851F",5:"#CD383F","threat":"#7D3953"};
+	var riskColors={"-":"#ccc",1:"#67A2B9",2:"#A7C439",3:"#FFC425",4:"#F6851F",5:"#CD383F",6:"#DD383F",7:"#ED383F",8:"#FD383F","threat":"#7D3953"};
 	var catxy={"networking":[306,186],"media":[612,186],"general-internet":[230,405],"collaboration":[460,405],"business-systems":[690,405]};
 	var threatCatxy={
 		"adware":[184,186],"backdoor":[368,186],"botnet":[552,186],"code-execution":[736,186],
@@ -311,7 +311,7 @@
 
 		// finally, scatterplot category/frequency
 
-		var rScale=d3.scale.linear().domain([0,1000000000]).range([1,20]);
+		var rScale=d3.scale.linear().domain([0,1]).range([1,20]);
 		var xScale=d3.scale.linear().range([115,865]);
 		var yScale={};
 		categories.forEach(function(cat,i) {yScale[cat]=80+i*100;} );
@@ -445,7 +445,7 @@
 
 		// that's not really necessary, but if there is a way the user finds itself in the view by frequency for threats, rather show something than crash the app
 
-		var rScale=d3.scale.linear().domain([0,100000000]).range([1,20]);
+		var rScale=d3.scale.linear().domain([0,1]).range([1,20]);
 		var xScale=d3.scale.linear().range([115,865]);
 		var yScale={};
 		threatCats.forEach(function(cat,i) {yScale[cat]=50+i*500/9;} );
