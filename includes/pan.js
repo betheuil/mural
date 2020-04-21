@@ -888,11 +888,11 @@
 								l = ((l = Math.sqrt(l)) - r) / l * k;
 					            node.x -= x *= l;
 					            node.y -= y *= l;
-					            //bind(node)
+					            bind(node)
 					            quad.point.x += x;
 					            quad.point.y += y;
-					            //bind(quad.point)
-					            //if (node.x-node.r<200) {node.x=node.r+200+x;}
+					            bind(quad.point)
+					            if (node.x-node.r<200) {node.x=node.r+200+x;}
 							}
 						}
 						return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
@@ -912,7 +912,7 @@
 
 			function bind(node) {
 
-				var max=-200;
+				var max=200;
 				var x=node.x,y=node.y,tx=node.tx,ty=node.ty;
 				var d=Math.sqrt((x-tx)*(x-tx)+(y-ty)*(y-ty))
 				if (d>max) {
