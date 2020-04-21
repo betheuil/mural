@@ -694,6 +694,7 @@
 		d3.select("#data_left").selectAll(".value").data(pan.dataLeft).html(String)
 		d3.select("#data_right").selectAll(".value").data(pan.dataRight).html(String)
 
+		/*
 
 		var psb=pan.svg.select("#back")
 		psb.selectAll("*").remove();
@@ -729,7 +730,7 @@
 				.attr("d",function(d) {return "M115,"+(80+(pan.main=="applications"?100:(500/9))*d)+"h750"})
 				.style("stroke","#eee")
 
-		}
+		}	*/
 
 		var circles=pan.svg.selectAll(".circles").data(nodes);
 		circles.exit().transition().style("opacity",0).remove();
@@ -1135,7 +1136,7 @@ pan.setInterface = function() {
 		d3.select("#select_region").select("option").property("selected",true)
 		pan.setInterface();
 	
-		d3.select("#select_region").property("value","Worldwide").on("change",function() {
+		d3.select("#select_region").property("value","All").on("change",function() {
 			// d3.select("#sidebar").selectAll("a").classed("active",0)
 			var v=d3.select(this).property("selectedIndex");
 			pan.criteria["region"]=["global","americas","europe","asiapacific","REC"][v];
