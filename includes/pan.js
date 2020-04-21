@@ -1134,8 +1134,208 @@ pan.setInterface = function() {
 		d3.select("#select_dataset").select("option").property("selected",true)
 		d3.select("#select_region").select("option").property("selected",true)
 		pan.setInterface();
-	}
 	
+		d3.select("#select_region").property("value","Worldwide").on("change",function() {
+			// d3.select("#sidebar").selectAll("a").classed("active",0)
+			var v=d3.select(this).property("selectedIndex");
+			pan.criteria["region"]=["global","americas","europe","asiapacific","japan"][v];
+			pan.filter(pan.criteria);
+			pan.drawview(pan.mode);
+		})
 
+		d3.select("#select_dataset").property("value","All Applications").on("change",function() {
+			// d3.select("#sidebar").selectAll("a").classed("active",0)
+			var v=d3.select(this).property("selectedIndex");
+			pan.setInterface();
+			if(v<7) {
+				if (pan.main!="applications") {
+						pan.main="applications";
+						pan.setInterface();
+						delete pan.criteria["threatType"];
+					}
+
+					if (v<2) {
+						delete pan.criteria["subcategory"];
+					} else {
+						pan.criteria["subcategory"]=["file-sharing","photo-video","remote-access","social-networking","proxy-tunnels"][v-2]
+					}
+					if(v==1) {
+							d3.selectAll("#tec-app,#fre-app").classed("disabled",1);
+							if(pan.mode>1) {
+								pan.mode=0;
+								d3.select("#all-app").classed("active",1);
+							}
+						} else {
+							d3.selectAll("#tec-app,#fre-app").classed("disabled",0);	
+						}
+					pan.filter(pan.criteria);
+					pan.drawview(pan.mode);
+				} else {
+					if(pan.main!="threats") {
+						pan.main="threats";
+						pan.setInterface();
+						delete pan.criteria["subcategory"];
+					}
+					if(v==7) {
+						if(pan.mode==3) {pan.mode=0;d3.select("#all-thr").classed("active",1);}
+						d3.selectAll("#fre-thr").classed("disabled",0)
+						delete pan.criteria["threatType"];
+					} else {
+						d3.selectAll("#fre-thr").classed("disabled",1)
+						pan.criteria["threatType"]=((v==8)?"exploit":"malware")
+					}
+					pan.filter(pan.criteria);
+					//pan.setInterface();
+					pan.drawview(pan.mode);
+				}
+		})
+
+		/* d3.select("#sidebar").selectAll("a").on("click",function(d,i) {
+			d3.select("#view_selection").selectAll("a").classed("active",0).classed("disabled",0)
+			d3.select("#sidebar").selectAll("a").classed("active",0)
+			d3.select(this).classed("active",1)
+			if(i==0) {
+				pan.main="applications";
+				d3.select("#select_dataset").property("value","Applications by Subcategory");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-app").classed("active",1);
+				d3.selectAll("#tec-app,#fre-app").classed("disabled",1);
+				pan.mode=0;
+				pan.risk="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+			if(i==1) {
+				pan.main="threats";
+				d3.select("#select_dataset").property("value","Exploits by Application");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-thr").classed("active",1);
+				d3.select("#fre-thr").classed("disabled",1);
+				pan.mode=0;
+				pan.severity="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global",threatType:"exploit"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+			if(i==2) {
+				pan.main="threats";
+				d3.select("#select_dataset").property("value","Malware by Application");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-thr").classed("active",1);
+				d3.select("#fre-thr").classed("disabled",1);
+				pan.mode=0;
+				pan.severity="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global",threatType:"malware"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+			if(i==3) {
+				pan.main="applications";
+				d3.select("#select_dataset").property("value","Social Networking");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-app").classed("active",1);
+				pan.mode=0;
+				pan.risk="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global",subcategory:"social-networking"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+			if(i==4) {
+				pan.main="applications";
+				d3.select("#select_dataset").property("value","File Sharing");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-app").classed("active",1);
+				pan.mode=0;
+				pan.risk="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global",subcategory:"file-sharing"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+			if(i==5) {
+				pan.main="applications";
+				d3.select("#select_dataset").property("value","Photo-Video");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-app").classed("active",1);
+				pan.mode=0;
+				pan.risk="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global",subcategory:"photo-video"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+			if(i==6) {
+				pan.main="applications";
+				pan.setInterface();
+				d3.select("#select_dataset").property("value","Remote Access");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-app").classed("active",1);
+				pan.mode=0;
+				pan.risk="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global",subcategory:"remote-access"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+
+			if(i==7) {
+				pan.main="applications";
+				pan.setInterface();
+				d3.select("#select_dataset").property("value","Proxy & Encrypted Tunnels");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-app").classed("active",1);
+				pan.mode=0;
+				pan.risk="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global",subcategory:"proxy-tunnels"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+
+			if(i==8) {
+				pan.main="applications";
+				pan.setInterface();
+				d3.select("#select_dataset").property("value","All Applications");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-app").classed("active",1);
+				pan.mode=0;
+				pan.risk="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+
+			if(i==9) {
+				pan.main="threats";
+				pan.setInterface();
+				d3.select("#select_dataset").property("value","All Threats");
+				d3.select("#select_region").property("value","Worldwide");
+				d3.select("#all-thr").classed("active",1);
+				d3.select("#fre-thr").classed("disabled",1);
+				pan.mode=0;
+				pan.severity="All";
+				pan.dataLeft[2]="All";
+				pan.criteria={region:"global"};
+				pan.filter(pan.criteria);
+				pan.setInterface();
+				pan.drawview(pan.mode);
+			}
+		}) */
+	}
 
 })();
