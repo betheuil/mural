@@ -37,23 +37,7 @@
 </div>
 		<!-- Cease: Rounded Corners -->	
 		<!-- Begin: Container -->
-		<div id="container" style="margin-bottom:0;">
-		<div id="sidebar">
-		  <h2>Key Questions</h2>
-		  <p class="subhead">Select a question, see an answer</p>
-		  <a class="button" href="#">Which application subcategories are consuming the most bandwidth?</a>
-		  <a class="button" href="#">Which applications deliver the most exploits?</a>
-		  <a class="button" href="#">Which applications are common malware vectors?</a>
-		  <a class="button" href="#">How much bandwidth does social networking really consume?</a>
-		  <a class="button" href="#">How many file sharing variants are in use?</a>
-		  <a class="button" href="#">How much bandwidth is consumed by photo-video applications?</a>
-		  <a class="button" href="#">How many remote access applications were found?</a>
-		  <a class="button" href="#">Which proxy and encrypted tunnels are most commonly found?</a>
-		  <a class="button" href="#">Browse applications</a>
-		  <a class="button" href="#">Browse threats</a>
-          <a class="report_button" href="http://www.paloaltonetworks.com/literature/whitepapers/aur-report.html">Download Complete Report</a>
-            <p class="mousetype">The Palo Alto Networks Application Usage &amp; Threat Report (10 edition, February 2013) uses data collected from application traffic analysis conducted across 3,000+ organizations worldwide.</p>
-		</div>				
+		<div id="container" style="margin-bottom:0;">		
 			<!-- Begin: Content -->
 		  <div id="content">
           	<div id="interact_wrap"><div id="interact">
@@ -74,30 +58,30 @@
           	  			<option value="Malware by Application">Malware by Application</option></select>
           			</optgroup>
               	<select id="select_region" style="width:117px;">
-              		<option value="Worldwide" selected>Worldwide</option>
-		          	<option value="Americas/Canada">Americas/Canada</option>
-		          	<option value="Europe">Europe</option>
-		          	<option value="Asia-Pacific">Asia-Pacific</option>
-		          	<option value="Japan">Japan</option>
+              		<option value="All">All</option>
+		          	<option value="VAPA">VAPA</option>
+		          	<option value="P&D">P&D</option>
+		          	<option value="CPA">CPA</option>
+		          	<option value="REC" selected>REC</option>
           		</select>
           	</p>
 
             <div id="view_selection" class="btn-group">
         <a href="#" id="all" class="btn active">All</a>
-        <a href="#" id="category" class="btn">Category</a>
+        <a href="#" id="category" class="btn">Group</a>
         <a href="#" id="technology" class="btn">Technology</a>
-        <a href="#" id="frequency" class="btn">Frequency</a>
+        <a href="#" id="frequency" class="btn">Tenure</a>
      			 </div>
             <p id="riskpanel">Risk:
             <a href="#" class="risk" id="risk_1"><img src="images/risk_1.png" width="26" height="25" /></a><a href="#" class="risk" id="risk_2"><img src="images/risk_2.png" width="26" height="25" /></a><a href="#" class="risk" id="risk_3"><img src="images/risk_3.png" width="26" height="25" /></a><a href="#" class="risk" id="risk_4"><img src="images/risk_4.png" width="26" height="25" /></a><a href="#" class="risk" id="risk_5"><img src="images/risk_5.png" width="26" height="25" /></a><a href="#" class="risk" id="risk_all"><img src="images/risk_all.png" width="26" height="27" /></a><span class="spacer">&nbsp;</span><a href="#"><img src="images/risk_help.png" width="26" height="27" align="right" /></a></p>
             </div></div>
             <div id="data_display" style="z-index:10">
             	<div id="data_left">
-	            <h2>Application Bandwidth</h2>
-	            <p><span class="field">Region:</span>&nbsp;<span class="value">Worldwide</span></p>
-	            <p><span class="field">Applications:</span>&nbsp;<span class="value">apps by subcategory</span></p>
-	            <p><span class="field">View:</span>&nbsp;<span class="value">All</span></p>
-	            <p><span class="field">Risk:</span>&nbsp;<span class="value">All</span></p>
+	            <h2>Group</h2>
+	            <p><span class="field">Operational Unit:</span>&nbsp;<span class="value">Worldwide</span></p>
+	            <p><span class="field">Service Line</span>&nbsp;<span class="value">apps by subcategory</span></p>
+	            <p><span class="field">Group:</span>&nbsp;<span class="value">All</span></p>
+	            <p><span class="field">Grades:</span>&nbsp;<span class="value">All</span></p>
                 <br />
                 </div>
                 <div id="data_right">
@@ -124,29 +108,11 @@
 
 <div id="footer" style="text-align:center;">
 	<ul class="sub-footer" style="font-size:11px;margin-bottom:5px;">
-		<li><a href="http://www.paloaltonetworks.com/products/overview/">Firewalls</a></li>
-		<li><a href="http://www.paloaltonetworks.com/products/features/vpn.html">VPN</a></li>
-		<li><a href="http://www.paloaltonetworks.com/products/features/antivirus.html">Malware</a></li>
-		<li><a href="http://www.paloaltonetworks.com/products/features/ips.html">Intrusion Prevention System</a></li>
-		<li><a href="http://www.paloaltonetworks.com/community/learning-center/what-is-an-intrusion-detection-system-ids.html">Intrusion Detection System</a></li>
-		<li><a href="http://www.paloaltonetworks.com/products/features/url-filtering.html">URL Filtering</a></li>
-		<li><a href="http://www.paloaltonetworks.com/products/features/ips.html">Denial of Service Attack</a></li>
-		<li><a href="http://www.paloaltonetworks.com/products/features/policy-control.html">Security Policy</a></li>
-		<li><a href="http://www.paloaltonetworks.com">Network Security</a></li>
-		<li style="background:none;"><a href="/solutions/data-center/">Data Center</a></li>
-	</ul>
-	<ul class="sub-footer" style="font-size:11px;margin-bottom:5px;">
-		<li><a href="http://www.paloaltonetworks.com/privacy.html">Privacy</a></li>
-		<li><a href="http://connect.paloaltonetworks.com/subscriptions">Manage My Subscriptions</a></li>
-		<li><a href="http://www.paloaltonetworks.com/termsofuse.html">Terms of Use</a></li>
-		<li><a href="http://feeds.feedburner.com/PaloAltoNetworks">RSS Feed</a></li>
-		<li><a href="http://www.paloaltonetworks.com/globalsites.html">Global Sites</a></li>
-		<li><a href="http://www.paloaltonetworks.com/sitemap">Site Index</a></li>
-		<li><a href="http://www.paloaltonetworks.com/search">Search</a></li>
-		<li style="background:none;"><a href="/contact/contact/">Contact Us</a></li>
+		<li><a href="https://betheuil.github.io/mural">Home</a></li>
+		<li style="background:none;"><a href="/">Contact Us</a></li>
 	</ul>
 	<ul class="sub-footer" style="font-size:11px;">
-		<li style="background:none;">Copyright &copy;2007-2013 Palo Alto Networks. All rights Reserved.</li>
+		<li style="background:none;">Copyright &copy;2020 Deloitte. All rights Reserved.</li>
 	</ul>
 </div>
 
