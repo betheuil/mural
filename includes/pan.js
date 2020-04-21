@@ -35,7 +35,7 @@
 	var subcats=[];
 	var threatTypes=["exploit","malware"];
 
-	var riskColors={"-":"#ccc",1:"#67A2B9",2:"#A7C439",3:"#FFC425",4:"#F6851F",5:"#CD383F",6:"#DD383F",7:"#ED383F",8:"#FD383F","threat":"#7D3953"};
+	var riskColors={"-":"#ccc",1:"#62b5e5",2:"#87bc25",3:"#80b82c",4:"#6fad31",5:"#549d34",6:"#318637",7:"#046a38",8:"#012069","threat":"#7D3953"};
 	var catxy={"networking":[306,186],"media":[612,186],"general-internet":[230,405],"collaboration":[460,405],"business-systems":[690,405]};
 	var threatCatxy={
 		"adware":[184,186],"backdoor":[368,186],"botnet":[552,186],"code-execution":[736,186],
@@ -794,13 +794,13 @@
 				else {
 				infotip=[
 					{label:"",value:d.name,title:true},
+					{label:"",value:d.ports},
 					{label:"Bandwidth:",value:d3.format(",")(+d.bandwidth)},
 					{label:"HD movies equivalent:",value:d3.format(",")(+d.hd)},
 					{label:"% of total bandwidth:",value:d3.format("4.2%")(+d.bandwidth/pan.totalB)},	
 					{label:"Sessions consumed:",value:d3.format(",")(+d.sessions)},
 					{label:"% of total sessions:",value:d3.format("4.2%")(+d.sessions/pan.totalS)},	
-					{label:"Frequency of use:",value:isNaN(d.frequency)?"-":d3.format("4.2%")(+d.frequency)},
-					{label:"Ports:",value:d.ports}
+					{label:"Frequency of use:",value:isNaN(d.frequency)?"-":d3.format("4.2%")(+d.frequency)}
 
 				];	}
 			} else {
@@ -1108,9 +1108,9 @@ pan.setInterface = function() {
 				left:"0px",
 				width:"200px",
 				padding:"10px",
-				"border-radius":"5px",
-				"-webkit-border-radius":"5px",
-				"-moz-border-radius":"5px",
+				"border-radius":"0px",
+				"-webkit-border-radius":"0px",
+				"-moz-border-radius":"0px",
 				"background-color":"white",
 				"box-shadow":"0px 0px 5px #AAA",
 				"z-index":"100",
