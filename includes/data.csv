@@ -3862,65 +3862,65 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.005,asiapacific,51.com-posting,66309,0,0,17,0,collaboration,web-posting,browser-based,2,tcp/80
 0.018,asiapacific,51.com-bbs,14423532,0,0,329,0,collaboration,web-posting,browser-based,2,tcp/80
 0.005,asiapacific,2ch-posting,263593,0,0,80,0,collaboration,web-posting,browser-based,2,tcp/80
-0.003,japan,51.com-music,149106,0.016949153,0,4,0,media,audio-streaming,browser-based,2,tcp/80
-0.02,japan,air-video,34929257,0,0,601,0,media,audio-streaming,client-server,1,tcp/dynamic
-0.612,japan,amazon-cloud-player,517256551,0,0,17360,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
-0.003,japan,daap,1791504,0,0,1,0,media,audio-streaming,client-server,4,tcp/80
-0.06,japan,deezer,7295137,0,0,222,0,media,audio-streaming,browser-based,3,tcp/80
-0.01,japan,ezpeer,4166942,0,0,272,0,media,audio-streaming,browser-based,2,tcp/dynamic
-0.01,japan,google-music,1689507457,0,1,203,0,media,audio-streaming,client-server,3,"tcp/80, 443"
-0.171,japan,grooveshark,76174616050,0,25,76789,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
-0.863,japan,http-audio,7.34836E+11,0.001,245,1234209,0,media,audio-streaming,browser-based,5,tcp/80
-0.104,japan,iheartradio,31325646,0,0,997,0,media,audio-streaming,browser-based,3,"tcp/80, 443, 1935"
-0.696,japan,itunes-base,2.2947E+12,0.004,765,2842890,0,media,audio-streaming,client-server,3,"tcp/80, 443"
-0.308,japan,itunes-mediastore,3.67973E+11,0.001,123,24205,0,media,audio-streaming,client-server,3,tcp/80
-0.037,japan,jango,716984275,0,0,354,0,media,audio-streaming,browser-based,3,tcp/80
-0.007,japan,kkbox,82530,0,0,17,0,media,audio-streaming,client-server,3,tcp/80
-0.298,japan,last.fm,1122106671,0,0,11129,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
-0.177,japan,live365,547008649,0,0,27597,0,media,audio-streaming,browser-based,2,tcp/80
-0.047,japan,napster,6122795,0,0,459,0,media,audio-streaming,browser-based,3,tcp/80
-0.023,japan,orb,3121433,0,0,141,0,media,audio-streaming,browser-based,2,"tcp/80, 85, 86, 443"
-0.09,japan,pandora,347283523,0,0,1578,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
-0.488,japan,pandora-tv,1.61137E+11,0,54,497923,0,media,audio-streaming,browser-based,4,"tcp/80, 443, 8080"
-0.181,japan,qqmusic,8243747070,0,3,260917,0,media,audio-streaming,client-server,3,"udp/dynamic, tcp/80"
-0.09,japan,renren-music,1660675807,0,1,2378,0,media,audio-streaming,browser-based,2,tcp/80
-0.007,japan,rhapsody,1647303,0,0,3,0,media,audio-streaming,client-server,3,tcp/80
-0.003,japan,seeqpod,287687,0,0,1,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
-0.271,japan,shoutcast,1.73783E+11,0,58,8602,0,media,audio-streaming,client-server,1,"tcp/8000, 8001, udp/8000, 8001"
-0.003,japan,slacker,8022024,0,0,14,0,media,audio-streaming,browser-based,2,"tcp/80, 443"
-0.03,japan,spotify,3186979378,0,1,1648,0,media,audio-streaming,client-server,3,"tcp/dynamic, 80"
-0.01,japan,streamaudio,45776,0,0,41,0,media,audio-streaming,browser-based,3,tcp/dynamic
-0.003,japan,winamp-remote,180,0,0,1,0,media,audio-streaming,browser-based,1,"tcp/85, 86, 80, 443"
-0.003,japan,xm-radio,760005,0,0,5,0,media,audio-streaming,browser-based,2,tcp/dynamic
-0.441,japan,active-directory,3.92937E+11,0.001,131,13036011,0.001,business-systems,auth-service,client-server,2,"tcp/1025-5000, tcp/135, 138, 389, 445, 464, 636, tcp/49152-65535, tcp/5722, 9389, udp/88, 123, 137, 138, 389, 445, 464, 2535"
-0.007,japan,cisco-nac,48157,0,0,457,0,business-systems,auth-service,client-server,1,"udp/8905, 8906"
-0.542,japan,kerberos,3.30416E+11,0.001,110,82858369,0.006,business-systems,auth-service,client-server,2,"tcp/88, 464, 749, 750, udp/88, 464, 749, 750"
-0.669,japan,ldap,8.01179E+11,0.001,267,106454633,0.008,business-systems,auth-service,client-server,2,"tcp/389, 3268, 3269, 636, udp/389, 3268"
-0.431,japan,ms-netlogon,2.18938E+11,0,73,12493171,0.001,business-systems,auth-service,client-server,2,"tcp/1025-5000, tcp/135, 445, tcp/49152-65535, udp/137, 138, 445"
-0.197,japan,radius,10877098625,0,4,1542940,0,business-systems,auth-service,client-server,1,"udp/1813, 1812, 1645, 1646"
-0.003,japan,securid,75688,0,0,32,0,business-systems,auth-service,client-server,2,udp/5500
-0.017,japan,tacacs-plus,16733557,0,0,21266,0,business-systems,auth-service,client-server,1,tcp/49
-0,japan,custom,7579,0,0,12,0,custom,custom,custom,-,#N/A
-0.054,japan,db2,85075738625,0,28,634124,0,business-systems,database,client-server,1,"tcp/50000, 60000"
-0.013,japan,drda,100547875,0,0,12,0,business-systems,database,network-protocol,1,tcp/55000
-0.017,japan,filemaker-anouncement,424590,0,0,146,0,business-systems,database,client-server,1,udp/28001
-0.127,japan,filemaker-pro,12059699085,0,4,5575,0,business-systems,database,client-server,1,tcp/dynamic
-0.017,japan,gds-db,21063065949,0,7,8251,0,business-systems,database,client-server,1,tcp/3050
-0.003,japan,informix,1898225,0,0,17,0,business-systems,database,client-server,2,tcp/dynamic
-0.324,japan,mssql-db,2.23557E+12,0.004,745,16989399,0.001,business-systems,database,client-server,2,"tcp/1433, udp/1433"
-0.385,japan,mssql-mon,163912213,0,0,97748,0,business-systems,database,client-server,2,udp/1434
-0.161,japan,mysql,1.56128E+11,0,52,155030,0,business-systems,database,client-server,2,tcp/3306
-0.365,japan,oracle,6.17421E+12,0.01,2058,19788781,0.001,business-systems,database,client-server,2,tcp/1521
-0.033,japan,oracle-forms,1.18362E+11,0,39,3590300,0,business-systems,database,browser-based,2,tcp/dynamic
-0.137,japan,postgres,1.78704E+12,0.003,596,16373375,0.001,business-systems,database,client-server,2,tcp/5432
-0.043,japan,sybase,7889905611,0,3,96777,0,business-systems,database,client-server,3,"tcp/1498, tcp/2439, tcp/2638, tcp/5000"
-0.003,japan,1und1-mail,2398102,0,0,82,0,collaboration,email,browser-based,3,"tcp/80, 443"
-0.284,japan,aim-mail,4267374469,0,1,103855,0,collaboration,email,browser-based,4,"tcp/80, 443"
-0.017,japan,blackberry,1243881163,0,0,504,0,collaboration,email,client-server,4,"tcp/3101, 4101, udp/17600-17800"
-0.003,japan,chinaren-mail,27836,0,0,4,0,collaboration,email,browser-based,2,tcp/80
-0.01,japan,comcast-webmail,104794193,0,0,1800,0,collaboration,email,browser-based,3,tcp/80
-0.003,japan,cox-webmail,584692,0,0,92,0,collaboration,email,browser-based,3,"tcp/80, 443"
-0.234,japan,daum-mail,88089491045,0,29,1031222,0,collaboration,email,browser-based,4,tcp/80
+0.003,japan,51.com-music,2.75805E+11,0.016949153,0,4,0,media,audio-streaming,browser-based,2,tcp/80
+0.02,japan,air-video,2.75805E+11,0.016949153,0,601,0,media,audio-streaming,client-server,1,tcp/dynamic
+0.612,japan,amazon-cloud-player,2.75805E+11,0.016949153,0,17360,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
+0.003,japan,daap,2.75805E+11,0.016949153,0,1,0,media,audio-streaming,client-server,4,tcp/80
+0.06,japan,deezer,2.75805E+11,0.016949153,0,222,0,media,audio-streaming,browser-based,3,tcp/80
+0.01,japan,ezpeer,2.75805E+11,0.016949153,0,272,0,media,audio-streaming,browser-based,2,tcp/dynamic
+0.01,japan,google-music,2.75805E+11,0.016949153,1,203,0,media,audio-streaming,client-server,3,"tcp/80, 443"
+0.171,japan,grooveshark,2.75805E+11,0.016949153,25,76789,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
+0.863,japan,http-audio,2.75805E+11,0.016949153,245,1234209,0,media,audio-streaming,browser-based,5,tcp/80
+0.104,japan,iheartradio,2.75805E+11,0.016949153,0,997,0,media,audio-streaming,browser-based,3,"tcp/80, 443, 1935"
+0.696,japan,itunes-base,2.75805E+11,0.016949153,765,2842890,0,media,audio-streaming,client-server,3,"tcp/80, 443"
+0.308,japan,itunes-mediastore,2.75805E+11,0.016949153,123,24205,0,media,audio-streaming,client-server,3,tcp/80
+0.037,japan,jango,2.75805E+11,0.016949153,0,354,0,media,audio-streaming,browser-based,3,tcp/80
+0.007,japan,kkbox,2.75805E+11,0.016949153,0,17,0,media,audio-streaming,client-server,3,tcp/80
+0.298,japan,last.fm,2.75805E+11,0.016949153,0,11129,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
+0.177,japan,live365,2.75805E+11,0.016949153,0,27597,0,media,audio-streaming,browser-based,2,tcp/80
+0.047,japan,napster,2.75805E+11,0.016949153,0,459,0,media,audio-streaming,browser-based,3,tcp/80
+0.023,japan,orb,2.75805E+11,0.016949153,0,141,0,media,audio-streaming,browser-based,2,"tcp/80, 85, 86, 443"
+0.09,japan,pandora,2.75805E+11,0.016949153,0,1578,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
+0.488,japan,pandora-tv,2.75805E+11,0.016949153,54,497923,0,media,audio-streaming,browser-based,4,"tcp/80, 443, 8080"
+0.181,japan,qqmusic,2.75805E+11,0.016949153,3,260917,0,media,audio-streaming,client-server,3,"udp/dynamic, tcp/80"
+0.09,japan,renren-music,2.75805E+11,0.016949153,1,2378,0,media,audio-streaming,browser-based,2,tcp/80
+0.007,japan,rhapsody,2.75805E+11,0.016949153,0,3,0,media,audio-streaming,client-server,3,tcp/80
+0.003,japan,seeqpod,2.75805E+11,0.016949153,0,1,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
+0.271,japan,shoutcast,2.75805E+11,0.016949153,58,8602,0,media,audio-streaming,client-server,1,"tcp/8000, 8001, udp/8000, 8001"
+0.003,japan,slacker,2.75805E+11,0.016949153,0,14,0,media,audio-streaming,browser-based,2,"tcp/80, 443"
+0.03,japan,spotify,2.75805E+11,0.016949153,1,1648,0,media,audio-streaming,client-server,3,"tcp/dynamic, 80"
+0.01,japan,streamaudio,2.75805E+11,0.016949153,0,41,0,media,audio-streaming,browser-based,3,tcp/dynamic
+0.003,japan,winamp-remote,2.75805E+11,0.016949153,0,1,0,media,audio-streaming,browser-based,1,"tcp/85, 86, 80, 443"
+0.003,japan,xm-radio,2.75805E+11,0.016949153,0,5,0,media,audio-streaming,browser-based,2,tcp/dynamic
+0.441,japan,active-directory,2.75805E+11,0.016949153,131,13036011,0.001,business-systems,auth-service,client-server,2,"tcp/1025-5000, tcp/135, 138, 389, 445, 464, 636, tcp/49152-65535, tcp/5722, 9389, udp/88, 123, 137, 138, 389, 445, 464, 2535"
+0.007,japan,cisco-nac,2.75805E+11,0.016949153,0,457,0,business-systems,auth-service,client-server,1,"udp/8905, 8906"
+0.542,japan,kerberos,2.75805E+11,0.016949153,110,82858369,0.006,business-systems,auth-service,client-server,2,"tcp/88, 464, 749, 750, udp/88, 464, 749, 750"
+0.669,japan,ldap,2.75805E+11,0.016949153,267,106454633,0.008,business-systems,auth-service,client-server,2,"tcp/389, 3268, 3269, 636, udp/389, 3268"
+0.431,japan,ms-netlogon,2.75805E+11,0.016949153,73,12493171,0.001,business-systems,auth-service,client-server,2,"tcp/1025-5000, tcp/135, 445, tcp/49152-65535, udp/137, 138, 445"
+0.197,japan,radius,2.75805E+11,0.016949153,4,1542940,0,business-systems,auth-service,client-server,1,"udp/1813, 1812, 1645, 1646"
+0.003,japan,securid,2.75805E+11,0.016949153,0,32,0,business-systems,auth-service,client-server,2,udp/5500
+0.017,japan,tacacs-plus,2.75805E+11,0.016949153,0,21266,0,business-systems,auth-service,client-server,1,tcp/49
+0,japan,custom,2.75805E+11,0.016949153,0,12,0,custom,custom,custom,-,#N/A
+0.054,japan,db2,2.75805E+11,0.016949153,28,634124,0,business-systems,database,client-server,1,"tcp/50000, 60000"
+0.013,japan,drda,2.75805E+11,0.016949153,0,12,0,business-systems,database,network-protocol,1,tcp/55000
+0.017,japan,filemaker-anouncement,2.75805E+11,0.016949153,0,146,0,business-systems,database,client-server,1,udp/28001
+0.127,japan,filemaker-pro,2.75805E+11,0.016949153,4,5575,0,business-systems,database,client-server,1,tcp/dynamic
+0.017,japan,gds-db,2.75805E+11,0.016949153,7,8251,0,business-systems,database,client-server,1,tcp/3050
+0.003,japan,informix,2.75805E+11,0.016949153,0,17,0,business-systems,database,client-server,2,tcp/dynamic
+0.324,japan,mssql-db,2.75805E+11,0.016949153,745,16989399,0.001,business-systems,database,client-server,2,"tcp/1433, udp/1433"
+0.385,japan,mssql-mon,2.75805E+11,0.016949153,0,97748,0,business-systems,database,client-server,2,udp/1434
+0.161,japan,mysql,2.75805E+11,0.016949153,52,155030,0,business-systems,database,client-server,2,tcp/3306
+0.365,japan,oracle,2.75805E+11,0.016949153,2058,19788781,0.001,business-systems,database,client-server,2,tcp/1521
+0.033,japan,oracle-forms,2.75805E+11,0.016949153,39,3590300,0,business-systems,database,browser-based,2,tcp/dynamic
+0.137,japan,postgres,2.75805E+11,0.016949153,596,16373375,0.001,business-systems,database,client-server,2,tcp/5432
+0.043,japan,sybase,2.75805E+11,0.016949153,3,96777,0,business-systems,database,client-server,3,"tcp/1498, tcp/2439, tcp/2638, tcp/5000"
+0.003,japan,1und1-mail,2.75805E+11,0.016949153,0,82,0,collaboration,email,browser-based,3,"tcp/80, 443"
+0.284,japan,aim-mail,2.75805E+11,0.016949153,1,103855,0,collaboration,email,browser-based,4,"tcp/80, 443"
+0.017,japan,blackberry,2.75805E+11,0.016949153,0,504,0,collaboration,email,client-server,4,"tcp/3101, 4101, udp/17600-17800"
+0.003,japan,chinaren-mail,2.75805E+11,0.016949153,0,4,0,collaboration,email,browser-based,2,tcp/80
+0.01,japan,comcast-webmail,2.75805E+11,0.016949153,0,1800,0,collaboration,email,browser-based,3,tcp/80
+0.003,japan,cox-webmail,2.75805E+11,0.016949153,0,92,0,collaboration,email,browser-based,3,"tcp/80, 443"
+0.234,japan,daum-mail,2.75805E+11,0.016949153,29,1031222,0,collaboration,email,browser-based,4,tcp/80
 0.918,global,http-audio,6.82893E+13,0.005,22763,49654315,0,media,audio-streaming,browser-based,5,tcp/80
 0.857,global,itunes-base,5.95042E+13,0.005,19835,116809533,0.001,media,audio-streaming,client-server,3,"tcp/80, 443"
 0.676,global,amazon-cloud-player,62966538539,0,21,619692,0,media,audio-streaming,browser-based,3,"tcp/80, 443"
@@ -5317,3 +5317,8 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.001,global,socialtext-editing,10252227,0,0,33,0,collaboration,web-posting,browser-based,2,tcp/80
 0.001,global,chinaren-posting,1329859,0,0,27,0,collaboration,web-posting,browser-based,3,tcp/80
 0,global,zwiki-editing,105857,0,0,2,0,collaboration,web-posting,browser-based,2,tcp/80
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,1.62725E+13,,,,,,,,,
