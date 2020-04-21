@@ -3915,6 +3915,7 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.137,japan,"Robinson, Chris X",2.75805E+11,0.014492754,1,16373375,0.001,business-systems,database,client-server,7,Director
 0.043,japan,"Rubio, Francisco",2.75805E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager
 0.003,japan,"Salisbury, Greg",2.75805E+11,0.014492754,1,82,0,collaboration,email,browser-based,4,Assistant Manager
+0.284,japan,"Scopes, Robert",2.75805E+11,0.014492754,1,103855,0,business-systems,email,browser-based,8,Partner
 0.284,japan,"Scopes, Robert",2.75805E+11,0.014492754,1,103855,0,collaboration,email,browser-based,8,Partner
 0.017,japan,"Shilton, Nigel",2.75805E+11,0.014492754,1,504,0,collaboration,email,client-server,8,Partner
 0.003,japan,"Simon, Peter",2.75805E+11,0.014492754,1,4,0,collaboration,email,browser-based,6,Assistant Director

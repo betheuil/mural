@@ -1,5 +1,5 @@
 html{
-	background:#010101 url(http://media.paloaltonetworks.com/designimages/bg-all.gif);
+	background:#000;
 	height:100%;
 }
 body {
@@ -34,8 +34,8 @@ form, fieldset {
 	overflow:hidden;
 }
 #container{
-	background:#fff ;
-/*	background:#fff url(http://media.paloaltonetworks.com/designimages/bg-container.gif) repeat-x;
+	background:#000;
+/*	background:#000;
 */	width:1220px;
 	border-color:#fff #8f8f8f #cecece;
 	border-style:solid;

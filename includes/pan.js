@@ -10,8 +10,8 @@
 	var interface={
 		buttons:{
 		applications:[
-			{label:"All Apps",id:"all-app"},
-			{label:"Category",id:"cat-app"},
+			{label:"Service Line",id:"all-app"},
+			{label:"Operational Unit",id:"cat-app"},
 			{label:"Technology",id:"tec-app"},
 			{label:"Frequency",id:"fre-app"}
 		],
@@ -794,7 +794,7 @@
 				else {
 				infotip=[
 					{label:"",value:d.name,title:true},
-					{label:"",value:d.ports},
+					{label:"Job title",value:d.ports},
 					{label:"Bandwidth:",value:d3.format(",")(+d.bandwidth)},
 					{label:"HD movies equivalent:",value:d3.format(",")(+d.hd)},
 					{label:"% of total bandwidth:",value:d3.format("4.2%")(+d.bandwidth/pan.totalB)},	
