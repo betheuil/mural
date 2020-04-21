@@ -1137,7 +1137,7 @@ pan.setInterface = function() {
 	
 		d3.select("#select_region").property("value","Worldwide").on("change",function() {
 			// d3.select("#sidebar").selectAll("a").classed("active",0)
-			// var v=d3.select(this).property("selectedIndex");
+			var v=d3.select(this).property("selectedIndex");
 			pan.criteria["region"]=["global","americas","europe","asiapacific","REC"][v];
 			pan.filter(pan.criteria);
 			pan.drawview(pan.mode);
@@ -1145,7 +1145,7 @@ pan.setInterface = function() {
 
 		d3.select("#select_dataset").property("value","All Applications").on("change",function() {
 			// d3.select("#sidebar").selectAll("a").classed("active",0)
-			// var v=d3.select(this).property("selectedIndex");
+			var v=d3.select(this).property("selectedIndex");
 			pan.setInterface();
 			if(v<7) {
 				if (pan.main!="applications") {
