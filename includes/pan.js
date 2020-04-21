@@ -74,6 +74,7 @@
 		var tree={name:"root",children:nodes};
 		var pack=d3.layout.pack()
 		.size([s,s])
+		.padding([-10])
 		.sort(d3.ascending)
 		//.sort(function() {return Math.random()-.5})
 		//.sort(d3.descending)
