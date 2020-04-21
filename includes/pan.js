@@ -135,7 +135,7 @@
 
 			// we remove from selection: the custom app, and the apps smaller than 1 HD movie equivalent
 
-			pan.selection=pan.selection.filter(function(d) {return ((+d.hd)>1) && (d.name!="custom")})
+			pan.selection=pan.selection.filter(function(d) {return ((+d.hd)>=1) && (d.name!="custom")})
 
 			// but we add the grouping of the smaller movies.
 
