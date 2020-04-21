@@ -872,7 +872,7 @@
 			function collide(k) {
 				var q=d3.geom.quadtree(nodes);
 				return function(node) {
-					var nr= node.r-padding,
+					var nr= node.r+padding-10,
 						nx1=node.x -nr,
 						nx2=node.x +nr,
 						ny1=node.y -nr,
