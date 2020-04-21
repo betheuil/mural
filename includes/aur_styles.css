@@ -35,7 +35,7 @@ form, fieldset {
 }
 #container{
 	background:#000;
-/*	background:#000;
+/*	background:#000 url;
 */	width:1220px;
 	border-color:#fff #8f8f8f #cecece;
 	border-style:solid;
@@ -54,7 +54,7 @@ form, fieldset {
 
 #content{
 	width:918px;
-	float:right;
+	float:left;
 }
 #sidebar{
 	color:#5D584F;
@@ -174,7 +174,7 @@ form, fieldset {
 /* Header */
 #header .logo{
 	margin:37px 63px 0 44px;
-	background: url(http://media.paloaltonetworks.com/designimages/logo.gif) no-repeat;
+	background: url(images/logo.gif) no-repeat;
 	width:184px;
 	height:43px;
 	overflow:hidden;
