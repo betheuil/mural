@@ -174,7 +174,7 @@ form, fieldset {
 /* Header */
 #header .logo{
 	margin:37px 63px 0 44px;
-	background: url(images/logo.gif) no-repeat;
+	background: url(./images/logo.gif) no-repeat;
 	width:184px;
 	height:43px;
 	overflow:hidden;
