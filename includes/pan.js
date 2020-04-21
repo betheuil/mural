@@ -5,14 +5,6 @@
 	var width=960,height=800,padding=0;
 	
 	var rp=d3.select("#riskpanel").html();
-	
-
-
-rp.append("rect")
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr("fill", "pink");
-
 
 	var regions=["americas","europe","japan","asiapacific","global"];
 	var regionHash={"VAPA":"americas","P&D":"europe","REC":"japan","CPA":"asiapacific","All":"global"}
