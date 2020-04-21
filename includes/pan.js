@@ -74,7 +74,6 @@
 		var tree={name:"root",children:nodes};
 		var pack=d3.layout.pack()
 		.size([s,s])
-		.padding([-10])
 		.sort(d3.ascending)
 		//.sort(function() {return Math.random()-.5})
 		//.sort(d3.descending)
@@ -873,7 +872,7 @@
 			function collide(k) {
 				var q=d3.geom.quadtree(nodes);
 				return function(node) {
-					var nr= node.r+padding,
+					var nr= node.r-padding,
 						nx1=node.x -nr,
 						nx2=node.x +nr,
 						ny1=node.y -nr,
@@ -905,8 +904,8 @@
 				var dist=Math.sqrt((x-cx)*(x-cx)+(y-cy)*(y-cy))
 				
 				if (dist>max) {
-					x=cx-(max/dist)*(x-cx);
-					y=cy-(max/dist)*(y-cy);
+					x=cx+(max/dist)*(x-cx);
+					y=cy+(max/dist)*(y-cy);
 				}
 				d3.select(this).attr({cx:x,cy:y}) 
 			}
