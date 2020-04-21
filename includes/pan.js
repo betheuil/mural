@@ -871,8 +871,9 @@
 
 			function collide(k) {
 				var q=d3.geom.quadtree(nodes);
+				var padding1=-100;
 				return function(node) {
-					var nr= node.r+padding,
+					var nr= node.r+padding1,
 						nx1=node.x -nr,
 						nx2=node.x +nr,
 						ny1=node.y -nr,
@@ -882,7 +883,7 @@
 							var x=node.x-quad.point.x,
 								y=node.y-quad.point.y,
 								l=x*x+y*y,
-								r=nr-quad.point.r;
+								r=nr+quad.point.r;
 
 							if (l<r*r) {
 								l = ((l = Math.sqrt(l)) - r) / l * k;
