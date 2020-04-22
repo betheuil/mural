@@ -735,16 +735,24 @@
 		var circles=pan.svg.selectAll(".circles").data(nodes);
 		circles.exit().transition().style("opacity",0).remove();
 		circles.enter()
-			// .append("image")
-			.append("circle")
-			// .attr("xlink:href", "https://github.com/favicon.ico")
+			.append("image")
+			// .append("circle")
+			.attr("xlink:href", "https://github.com/favicon.ico")
 			.attr({
+					x:function(d) {return isNaN(d.x)?d.tx:d.x},
+					y:function(d) {return isNaN(d.y)?d.ty:d.y},
+					height:function(d) {return d.r},
+					width:function(d) {return d.r},
+					id:function(d) {return "c"+d.id},
+				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
+			})
+			/* .attr({
 					cx:function(d) {return isNaN(d.x)?d.tx:d.x},
 					cy:function(d) {return isNaN(d.y)?d.ty:d.y},
 					 r:function(d) {return d.r},
 					id:function(d) {return "c"+d.id},
 				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
-			})
+			}) */
 			/* .style({
 				stroke:"none",
 				 fill:function(d) {return riskColors[d.risk]},
