@@ -67,7 +67,7 @@
 
 		// optional: r radius of the packed circle,x-y its center
 
-		var s=r||500;
+		var s=r||700;
 		var x=cx||r/2;
 		var y=cy||r/2
 		var nodes=a.map(function(d,i) {return {value:+d};})
@@ -735,7 +735,8 @@
 		var circles=pan.svg.selectAll(".circles").data(nodes);
 		circles.exit().transition().style("opacity",0).remove();
 		circles.enter()
-			.append("circle")
+			.append("image")
+			// .append("circle")
 			.attr({
 					cx:function(d) {return isNaN(d.x)?d.tx:d.x},
 					cy:function(d) {return isNaN(d.y)?d.ty:d.y},
@@ -743,13 +744,14 @@
 					id:function(d) {return "c"+d.id},
 				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
 			})
-			.style({
+			.attr("xlink:href", "https://github.com/favicon.ico")
+			/* .style({
 				stroke:"none",
-				  fill:function(d) {return riskColors[d.risk]},
+				 fill:function(d) {return riskColors[d.risk]},
 			   "fill-opacity":function(d) {if (!d.severity) {return .9;} else {
 			   	//return {"medium":.2,"high":.5,"critical":9}[d.severity];
 			   	return d3.scale.linear().domain([0,.8*d3.max(nodes,function(d) {return d.detections})]).range([.3,.9])(+d.detections);
-			   }}})
+			   }}}) */
 
 		circles=pan.svg.selectAll(".circles").data(nodes);
 		circles.transition().attr({
