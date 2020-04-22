@@ -832,7 +832,7 @@
 		})
 		
 		circles.on("mouseover",function(d) {
-			d3.select(this).style("stroke","black");
+			d3.select(this).style("stroke","white");
 		})
 		circles.on("mouseout",function(d) {
 			d3.select(this).style("stroke","none");
