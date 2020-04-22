@@ -762,7 +762,14 @@
 			   }}}) */
 
 		circles=pan.svg.selectAll(".circles").data(nodes);
+
 		circles.transition().attr({
+					x:function(d) {return isNaN(d.x)?d.tx:d.x},
+					y:function(d) {return isNaN(d.y)?d.ty:d.y},
+					height:function(d) {return d.r},
+					width:function(d) {return d.r}
+			})
+		/* circles.transition().attr({
 					cx:function(d) {return isNaN(d.x)?d.tx:d.x},
 					cy:function(d) {return isNaN(d.y)?d.ty:d.y},
 					 r:function(d) {return d.r}
@@ -772,7 +779,7 @@
 			   	//return {"medium":.2,"high":.5,"critical":9}[d.severity];
 			   	return d3.scale.linear().domain([0,.8*d3.max(nodes,function(d) {return d.detections})]).range([.3,.9])(+d.detections);
 			   }}
-		})
+		}) */
 		
 		if(mode==1) {
 				pan.svg.selectAll(".labels").data(pan.main=="applications"?categories:threatCats).enter().append("text")
