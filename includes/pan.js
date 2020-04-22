@@ -779,7 +779,7 @@
 			   "text-anchor":"middle"})
 			}
 
-		circles.on("mouseover",function(d) {
+		circles.on("click",function(d) {
 			var infotip;
 			if(pan.main=="applications") {
 				if(d3.select("#select_dataset").property("value").toLowerCase()=="applications by subcategory") {
@@ -829,6 +829,9 @@
 			}
 			
 			pan.panel.transition().style({top:xy[1]+"px",left:xy[0]+"px",display:"block",width:"200px"});
+		})
+		
+		circles.on("mouseover",function(d) {
 			d3.select(this).style("stroke","black");
 		})
 		circles.on("mouseout",function(d) {
@@ -871,9 +874,8 @@
 
 			function collide(k) {
 				var q=d3.geom.quadtree(nodes);
-				var padding1=-100;
 				return function(node) {
-					var nr= node.r+padding1,
+					var nr= node.r+padding,
 						nx1=node.x -nr,
 						nx2=node.x +nr,
 						ny1=node.y -nr,
