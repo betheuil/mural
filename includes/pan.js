@@ -873,8 +873,11 @@
 					cy:function(d) {return d.y}})
 					}*/
 				if(pan.tick>0) {circles.attr({
-					cx:function(d) {return d.x},
-					cy:function(d) {return d.y}})
+					
+					x:function(d) {return d.x},
+					y:function(d) {return d.y}})
+					// cx:function(d) {return d.x},
+					// cy:function(d) {return d.y}})
 					}
 					//.each(draw)
 				
