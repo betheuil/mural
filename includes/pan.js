@@ -737,6 +737,7 @@
 		circles.enter()
 			.append("image")
 			// .append("circle")
+			.attr("xlink:href", "https://github.com/favicon.ico")
 			.attr({
 					cx:function(d) {return isNaN(d.x)?d.tx:d.x},
 					cy:function(d) {return isNaN(d.y)?d.ty:d.y},
@@ -744,7 +745,6 @@
 					id:function(d) {return "c"+d.id},
 				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
 			})
-			.attr("xlink:href", "https://github.com/favicon.ico")
 			/* .style({
 				stroke:"none",
 				 fill:function(d) {return riskColors[d.risk]},
