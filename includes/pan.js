@@ -765,14 +765,14 @@
 		circles=pan.svg.selectAll(".circles").data(nodes);
 
 		circles.transition().attr({
-					x:function(d) {return isNaN(d.x)?d.tx:d.x},
-					y:function(d) {return isNaN(d.y)?d.ty:d.y},
-					height:function(d) {return d.r},
-					width:function(d) {return d.r}
+					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-d.r},
+					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-d.r},
+					height:function(d) {return 2*d.r},
+					width:function(d) {return 2*d.r}
 			})
 		/* circles.transition().attr({
-					cx:function(d) {return isNaN(d.x)?d.tx:d.x},
-					cy:function(d) {return isNaN(d.y)?d.ty:d.y},
+					cx:function(d) {return (isNaN(d.x)?d.tx:d.x)-d.r},
+					cy:function(d) {return (isNaN(d.y)?d.ty:d.y)-d.r},
 					 r:function(d) {return d.r}
 			})
 			.style({stroke:"none",fill:function(d) {return riskColors[d.risk]},
