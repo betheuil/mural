@@ -512,6 +512,7 @@
 						region:r,
 						count:selection.length,
 						id:id,
+						img:img,
 						bandwidth:d3.sum(selection,function(d) {return +d.bandwidth;}),
 						hd:d3.sum(selection,function(d) {return +d.hd;}),
 						risk:d3.round(d3.mean(selection,function(d) {return +d.risk})),
