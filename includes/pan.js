@@ -320,7 +320,7 @@
 
 
 		pan.selection.forEach(function(d) {
-			d.pos[3]=({x:xScale(d.frequency), r:rScale(srsly(d.bandwidth)), y:yScale[d.category]})
+			d.pos[3]=({x:xScale(d.frequency), height:rScale(srsly(d.bandwidth)), width:rScale(srsly(d.bandwidth)), y:yScale[d.category]})
 		})
 		} else {
 
@@ -453,7 +453,7 @@
 		yScale["0"]=-200;yScale["custom-tcp"]=-200,yScale["custom-udp"]=-200; // shouldn't be required, but can't hurt
 
 		pan.selection.forEach(function(d) {
-			d.pos[3]=({x:xScale(Math.random()), r:rScale((d.detections)), y:yScale[d.category]})
+			d.pos[3]=({x:xScale(Math.random()), height:rScale((d.detections)), width:rScale((d.detections)), y:yScale[d.category]})
 		})
 
 		}
@@ -469,7 +469,7 @@
 				technology: technologies[p_rand(4)],
 				frequency: 10+p_rand(80),
 				bandwidth: (10+p_rand(900))*(10+p_rand(900)),
-				risk:p_rand(5)+1
+				risk:p_rand(7)+1
 			};
 			return d;
 		})
@@ -907,7 +907,7 @@
 			function collide(k) {
 				var q=d3.geom.quadtree(nodes);
 				return function(node) {
-					var nr= node.r+padding,
+					var nr= node.height+padding,
 						nx1=node.x -nr,
 						nx2=node.x +nr,
 						ny1=node.y -nr,
@@ -917,9 +917,9 @@
 							var x=node.x-quad.point.x,
 								y=node.y-quad.point.y,
 								l=x*x+y*y,
-								r=nr+quad.point.r;
+								height=nr+quad.point.height;
 
-							if (l<r*r) {
+							if (l<height*height) {
 								l = ((l = Math.sqrt(l)) - r) / l * k;
 					            node.x -= x *= l;
 					            node.y -= y *= l;
