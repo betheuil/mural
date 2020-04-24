@@ -677,17 +677,28 @@
 			if(pan.main==="threats"&&threatByApp()) {
 					nodes.forEach(function(n) {
 						if(n.category==="total"&&mode===1||n.category!=="total"&&mode!==1) {
-							n.r=0
+							n.height=0
 						}
 					})
 			}
 			pan.nodes2=nodes.slice(0);
 
+			if(nodes[i].height) {
+				nodes[i].height=pan.selection[i].pos[0].height;
+				if(nodes[i].height<pan.minheight) {nodes[i].r=pan.minheight;}
+				if(nodes[i].height>pan.maxheight) {nodes[i].r=pan.maxheight;}
+				nodes[i].width=pan.selection[i].pos[0].width;
+				if(nodes[i].width<pan.minwidth) {nodes[i].r=pan.minwidth;}
+				if(nodes[i].width>pan.maxwidth) {nodes[i].r=pan.maxwidth;}
+			};
+
+			/*
+
 			if(nodes[i].r) {
 				nodes[i].r=pan.selection[i].pos[0].r;
 				if(nodes[i].r<pan.minrad) {nodes[i].r=pan.minrad;}
 				if(nodes[i].r>pan.maxrad) {nodes[i].r=pan.maxrad;}
-			};
+			}; */
 		})
 		nodes.sort(function(a,b) {return b.r-a.r;});
 		// updating written info
