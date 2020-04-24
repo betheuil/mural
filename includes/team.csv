@@ -1,34 +1,4 @@
 frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of regional sessions,category,subcategory,technology,risk,ports,img
-0.033,REC,Adam Rigby,2.76E+11,0.014492754,1,3590300,0,business-systems,database,browser-based,6,Assistant Director,photos/Adam Rigby.png
-0.161,REC,Alex Petrelis,2.76E+11,0.014492754,1,155030,0,business-systems,database,client-server,6,Assistant Director,photos/Alex Petrelis.png
-0.054,REC,Alexander Marx,2.76E+11,0.014492754,1,634124,0,business-systems,database,client-server,4,Assistant Manager,photos/Alexander Marx.png
-0.234,REC,Alexandros Tsarouchis,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director,photos/Alexandros Tsarouchis.png
-0.612,REC,Alice Bak,2.76E+11,0.014492754,1,17360,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Alice Bak.png
-0.023,REC,Alistair Davies,2.76E+11,0.014492754,1,141,0,media,audio-streaming,browser-based,7,Director,photos/Alistair Davies.png
-0.007,REC,Alister Hirst,2.76E+11,0.014492754,1,457,0,business-systems,auth-service,client-server,6,Assistant Director,photos/Alister Hirst.png
-0.308,REC,Andrew Carey,2.76E+11,0.014492754,1,24205,0,media,audio-streaming,client-server,8,Partner,photos/Andrew Carey.png
-0.104,REC,Ben Brooks,2.76E+11,0.014492754,1,997,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Ben Brooks.png
-0.013,REC,Brendan McCullough,2.76E+11,0.014492754,1,12,0,business-systems,database,network-protocol,5,Manager,photos/Brendan McCullough.png
-0.234,REC,Carlos Urena Nieto,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,5,Manager,photos/Carlos Urena.png
-0.234,REC,Charlie Vincent,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,7,Director,photos/Charlie Vincent.png
-0.542,REC,Ching-Yee Hui,2.76E+11,0.014492754,1,82858369,0.006,business-systems,auth-service,client-server,2,Associate,photos/Ching-Yee Hui.png
-0.137,REC,Chris Robinson,2.76E+11,0.014492754,1,16373375,0.001,business-systems,database,client-server,7,Director,photos/Chris Robinson.png
-0.01,REC,Christian Betheuil,2.76E+11,0.014492754,1,203,0,media,audio-streaming,client-server,5,Manager,photos/Christian Betheuil.png
-0.003,REC,Claire Handby,2.76E+11,0.014492754,1,5,0,media,audio-streaming,browser-based,7,Director,photos/Claire Handby.png
-0.003,REC,Clare Bridger,2.76E+11,0.014492754,1,5,0,media,audio-streaming,browser-based,7,Director,photos/Clare Bridger.png
-0.324,REC,Claire O Shaughnessy,2.76E+11,0.014492754,1,16989399,0.001,business-systems,database,client-server,7,Director,photos/Claire O Shaughnessy.png
-0.234,REC,Daniyal Zafar,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,2,Associate,photos/Daniyal Zafar.png
-0.017,REC,David Merrick,2.76E+11,0.014492754,1,8251,0,business-systems,database,client-server,6,Assistant Director,photos/David Merrick.png
-0.003,REC,Eleanor Burrill,2.76E+11,0.014492754,1,14,0,media,audio-streaming,client-server,4,Assistant Manager,photos/Eleanor Burrill.png
-0.043,REC,Francisco Rubio,2.76E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager,photos/Francisco Rubio.png
-0.043,REC,Frances Treeby,2.76E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager,photos/Frances Treeby.png
-0.669,REC,Gareth D Jones,2.76E+11,0.014492754,1,106454633,0.008,business-systems,auth-service,client-server,6,Assistant Director,photos/Gareth Jones.png
-0.863,REC,Georgina Botterill,2.76E+11,0.014492754,1,1234209,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Georgina Botterill.png
-0.01,REC,Georgios Stefanopoulos,2.76E+11,0.014492754,1,1800,0,collaboration,email,browser-based,4,Assistant Manager,photos/George Stefanopoulos.png
-0.003,REC,Greg Salisbury,2.76E+11,0.014492754,1,82,0,collaboration,email,browser-based,4,Assistant Manager,photos/Greg Salisbury.png
-0.385,REC,Guy Palmer,2.76E+11,0.014492754,1,97748,0,business-systems,database,client-server,8,Partner,photos/Guy Palmer.png
-0.003,REC,Haroon Akram,2.76E+11,0.014492754,1,4,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Haroon Akram.png
-0.003,REC,Harriet Lee,2.76E+11,0.014492754,1,32,0,business-systems,auth-service,client-server,4,Assistant Manager,photos/Harriet Lee.png
 0.047,REC,Henry Darby,2.76E+11,0.014492754,1,459,0,media,audio-streaming,browser-based,3,Senior Associate,photos/Henry Darby.png
 0.007,REC,Hugh Dullage,2.76E+11,0.014492754,1,3,0,media,audio-streaming,client-server,7,Director,photos/Hugh Dullage.png
 0.007,REC,Hugo Clark,2.76E+11,0.014492754,1,17,0,media,audio-streaming,client-server,7,Director,photos/Hugo Clark.png
@@ -67,3 +37,33 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.234,REC,Stevi Wall,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,1,Executive Assistant,photos/Stevi Wall.png
 0.234,REC,Vanessa Vergallo,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,1,Executive Assistant,photos/Vanessa Vergallo.png
 0.003,REC,Victoria Smith,2.76E+11,0.014492754,1,4,0,collaboration,email,browser-based,8,Partner,photos/Vicky Smith.png
+0.033,REC,Adam Rigby,2.76E+11,0.014492754,1,3590300,0,business-systems,database,browser-based,6,Assistant Director,photos/Adam Rigby.png
+0.161,REC,Alex Petrelis,2.76E+11,0.014492754,1,155030,0,business-systems,database,client-server,6,Assistant Director,photos/Alex Petrelis.png
+0.054,REC,Alexander Marx,2.76E+11,0.014492754,1,634124,0,business-systems,database,client-server,4,Assistant Manager,photos/Alexander Marx.png
+0.234,REC,Alexandros Tsarouchis,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director,photos/Alexandros Tsarouchis.png
+0.612,REC,Alice Bak,2.76E+11,0.014492754,1,17360,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Alice Bak.png
+0.023,REC,Alistair Davies,2.76E+11,0.014492754,1,141,0,media,audio-streaming,browser-based,7,Director,photos/Alistair Davies.png
+0.007,REC,Alister Hirst,2.76E+11,0.014492754,1,457,0,business-systems,auth-service,client-server,6,Assistant Director,photos/Alister Hirst.png
+0.308,REC,Andrew Carey,2.76E+11,0.014492754,1,24205,0,media,audio-streaming,client-server,8,Partner,photos/Andrew Carey.png
+0.104,REC,Ben Brooks,2.76E+11,0.014492754,1,997,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Ben Brooks.png
+0.013,REC,Brendan McCullough,2.76E+11,0.014492754,1,12,0,business-systems,database,network-protocol,5,Manager,photos/Brendan McCullough.png
+0.234,REC,Carlos Urena Nieto,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,5,Manager,photos/Carlos Urena.png
+0.234,REC,Charlie Vincent,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,7,Director,photos/Charlie Vincent.png
+0.542,REC,Ching-Yee Hui,2.76E+11,0.014492754,1,82858369,0.006,business-systems,auth-service,client-server,2,Associate,photos/Ching-Yee Hui.png
+0.137,REC,Chris Robinson,2.76E+11,0.014492754,1,16373375,0.001,business-systems,database,client-server,7,Director,photos/Chris Robinson.png
+0.01,REC,Christian Betheuil,2.76E+11,0.014492754,1,203,0,media,audio-streaming,client-server,5,Manager,photos/Christian Betheuil.png
+0.003,REC,Claire Handby,2.76E+11,0.014492754,1,5,0,media,audio-streaming,browser-based,7,Director,photos/Claire Handby.png
+0.003,REC,Clare Bridger,2.76E+11,0.014492754,1,5,0,media,audio-streaming,browser-based,7,Director,photos/Clare Bridger.png
+0.324,REC,Claire O Shaughnessy,2.76E+11,0.014492754,1,16989399,0.001,business-systems,database,client-server,7,Director,photos/Claire O Shaughnessy.png
+0.234,REC,Daniyal Zafar,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,2,Associate,photos/Daniyal Zafar.png
+0.017,REC,David Merrick,2.76E+11,0.014492754,1,8251,0,business-systems,database,client-server,6,Assistant Director,photos/David Merrick.png
+0.003,REC,Eleanor Burrill,2.76E+11,0.014492754,1,14,0,media,audio-streaming,client-server,4,Assistant Manager,photos/Eleanor Burrill.png
+0.043,REC,Francisco Rubio,2.76E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager,photos/Francisco Rubio.png
+0.043,REC,Frances Treeby,2.76E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager,photos/Frances Treeby.png
+0.669,REC,Gareth D Jones,2.76E+11,0.014492754,1,106454633,0.008,business-systems,auth-service,client-server,6,Assistant Director,photos/Gareth Jones.png
+0.863,REC,Georgina Botterill,2.76E+11,0.014492754,1,1234209,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Georgina Botterill.png
+0.01,REC,Georgios Stefanopoulos,2.76E+11,0.014492754,1,1800,0,collaboration,email,browser-based,4,Assistant Manager,photos/George Stefanopoulos.png
+0.003,REC,Greg Salisbury,2.76E+11,0.014492754,1,82,0,collaboration,email,browser-based,4,Assistant Manager,photos/Greg Salisbury.png
+0.385,REC,Guy Palmer,2.76E+11,0.014492754,1,97748,0,business-systems,database,client-server,8,Partner,photos/Guy Palmer.png
+0.003,REC,Haroon Akram,2.76E+11,0.014492754,1,4,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Haroon Akram.png
+0.003,REC,Harriet Lee,2.76E+11,0.014492754,1,32,0,business-systems,auth-service,client-server,4,Assistant Manager,photos/Harriet Lee.png
