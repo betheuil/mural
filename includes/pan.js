@@ -295,7 +295,7 @@
 		var techsum2=iPack(techsum1,500,0,0)
 		// [{r:50,k:...,x:...,y:...},{r:100,...}]
 		var techsum3={};
-		technologies.forEach(function(t,i) {techsum3[t]=2*techsum2[i].r;})
+		technologies.forEach(function(t,i) {techsum3[t]=2*techsum2[i].height;})
 
 		technologies.forEach(function(tech) {
 			var stech=pan.selection.filter(function(d) {return d.technology==tech;})
@@ -378,7 +378,7 @@
 		var catsum2=iPack(catsum1,500,0,0)
 		// [{r:50,k:...,x:...,y:...},{r:100,...}]
 		var catsum3={};
-		threatCats.forEach(function(c,i) {catsum3[c]=1*catsum2[i].r;})
+		threatCats.forEach(function(c,i) {catsum3[c]=1*catsum2[i].height;})
 		// {"Networking":50, "Media":100, ...}
 		threatCats.forEach(function(cat) {
 			var scat=pan.selection.filter(function(d) {return d.category==cat;})
@@ -426,7 +426,7 @@
 		var typesum2=iPack(typesum1,500,0,0)
 		// [{r:50,k:...,x:...,y:...},{r:100,...}]
 		var typesum3={};
-		threatTypes.forEach(function(t,i) {typesum3[t]=2*typesum2[i].r;})
+		threatTypes.forEach(function(t,i) {typesum3[t]=2*typesum2[i].height;})
 
 
 		threatTypes.forEach(function(type) {
