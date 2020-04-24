@@ -814,7 +814,7 @@
 				if(d3.select("#select_dataset").property("value").toLowerCase()=="applications by subcategory") {
 					infotip=[
 					{label:"",value:d.name,title:true},
-					{label:"Bandwidth:",value:d3.format(",")(+d.bandwidth)},
+					{label:"Image:",value:d3.format(",")(+d.img)},
 					{label:"HD movies equivalent:",value:d3.format(",")(+d.hd)},
 					{label:"% of total bandwidth:",value:d3.format("4.2%")(+d.bandwidth/pan.totalB)},
 					{label:"Sessions consumed:",value:d3.format(",")(+d.sessions)},
