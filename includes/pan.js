@@ -746,10 +746,9 @@
 		var circles=pan.svg.selectAll(".circles").data(nodes);
 		circles.exit().transition().style("opacity",0).remove();
 		circles.enter()
-			//.append("image")
+			.append("image")
 			// .append("circle")
-			.append("rect")
-      //  		.attr("xlink:href",  function(d) { return d.img;})
+        		.attr("xlink:href",  function(d) { return d.img;})
 			// .attr("xlink:href", "https://github.com/favicon.ico")
 			.attr({
 					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-2.5*d.r},
@@ -765,14 +764,14 @@
 					 r:function(d) {return d.r},
 					id:function(d) {return "c"+d.id},
 				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
-			}) */
+			})
 			 .style({
 				stroke:"none",
 				 fill:function(d) {return riskColors[d.risk]},
 			   "fill-opacity":function(d) {if (!d.severity) {return .9;} else {
 			   	//return {"medium":.2,"high":.5,"critical":9}[d.severity];
 			   	return d3.scale.linear().domain([0,.8*d3.max(nodes,function(d) {return d.detections})]).range([.3,.9])(+d.detections);
-			   }}})
+			   }}})*/
 
 		circles=pan.svg.selectAll(".circles").data(nodes);
 
