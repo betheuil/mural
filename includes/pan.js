@@ -746,9 +746,10 @@
 		var circles=pan.svg.selectAll(".circles").data(nodes);
 		circles.exit().transition().style("opacity",0).remove();
 		circles.enter()
-			.append("image")
+			//.append("image")
 			// .append("circle")
-        		.attr("xlink:href",  function(d) { return d.img;})
+			.append("rect")
+      //  		.attr("xlink:href",  function(d) { return d.img;})
 			// .attr("xlink:href", "https://github.com/favicon.ico")
 			.attr({
 					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-2.5*d.r},
