@@ -3,7 +3,7 @@
 	// local variables and helper functions
 
 	var width=960,height=800,padding=0;
-	
+
 	var rp=d3.select("#riskpanel").html();
 
 	var regions=["americas","europe","REC","asiapacific","global"];
@@ -45,7 +45,7 @@
 	var techxy={"client-server":[304,186],"browser-based":[570,186],"peer-to-peer":[304,375],"network-protocol":[570,375]};
 	var threatxy={"exploit":[306,250],"malware":[612,250]};
 	var p_rand=function(n) {return Math.floor(Math.random()*n);}
-	
+
 	var srsly=function(b) {return Math.floor(+b/1000000)} // the packing function is not good with very large numbers.
 	var threatByApp = function() {return (d3.select("#select_dataset").property("value")!=="All Threats")}
 	var present=function(number,option) {	// sensible options to write numbers. works rather well for small or large numbers alike.
@@ -62,8 +62,8 @@
 	var iPack = function (a,r,cx,cy) {
 		// a is an array of numbers
 
-		// this function is a trimmed down version of the packed circle layout algorithm. 
-		// what it does is turn a set of numbers into a set of elements that determine a circle. 
+		// this function is a trimmed down version of the packed circle layout algorithm.
+		// what it does is turn a set of numbers into a set of elements that determine a circle.
 
 		// optional: r radius of the packed circle,x-y its center
 
@@ -99,7 +99,7 @@
 		// to be kept in the selection, for every key of criteria, a record must have the value corresponding to that key.
 		if (pan.main=="applications") {
 			pan.dhash={};
-			if(typeof(criteria)==="undefined") {pan.selection=pan.data.slice(0)} 
+			if(typeof(criteria)==="undefined") {pan.selection=pan.data.slice(0)}
 			// which would never happen, ever, but anyway
 				else {
 			if (d3.select("#select_dataset").property("value").toLowerCase()=="applications by subcategory") {
@@ -120,12 +120,12 @@
 
 			//pan.selection=pan.selection.sort(function(a,b) {return b.bandwidth-a.bandwidth}).slice(0,100);
 
-		
+
 
 			var selectionB=d3.sum(pan.selection,function(d) {return +d.bandwidth;})
 			var selectionS=d3.sum(pan.selection,function(d) {return +d.sessions;})
 			var selectionH=d3.sum(pan.selection,function(d) {return +d.hd;})
-			
+
 			pan.dataRight[0]=d3.format(",")(selectionB);
 			pan.dataRight[1]=d3.format("4.2%")(selectionB/pan.totalB);
 			pan.dataRight[2]=d3.format(",")(selectionH);
@@ -161,7 +161,7 @@
 			// filtering for threats, could be merged with the other case, but let's play it safe for now
 
 			pan.dhash={};
-			if(typeof(criteria)==="undefined") {pan.selection=pan.threats.slice(0)} 
+			if(typeof(criteria)==="undefined") {pan.selection=pan.threats.slice(0)}
 			// which would never happen, ever, but anyway
 				else {
 			if (d3.select("#select_dataset").property("value")=="All Threats") {
@@ -184,17 +184,17 @@
 			pan.dataRight[1]=d3.format(",")(pan.selection.length);
 
 			pan.dataLeft[3]=pan.severity;
-			
+
 			pan.selection=pan.selection.filter(function(d) {return d.name!=="0";})
 
 			if (d3.select("#select_dataset").property("value")=="All Threats") {
 				pan.selection=pan.selection.slice(0).sort(function(a,b) {return b.detections-a.detections}).slice(0,250)
 			} else {
 				var top25=pan.selection.filter(function(d) {return d.category=="total";}).slice(0).sort(function(a,b) {return b.detections-a.detections;}).slice(0,25).map(function(d) {return d.application;})
-//				pan.selection=pan.selection.filter(function(d) {return top25.indexOf(d.application)>-1&&d.category!="total";})	
+//				pan.selection=pan.selection.filter(function(d) {return top25.indexOf(d.application)>-1&&d.category!="total";})
 				pan.selection=pan.selection.filter(function(d) {return top25.indexOf(d.application)>-1
 					//&&d.category=="total"
-					;})	
+					;})
 			}
 		}
 
@@ -208,13 +208,13 @@
 
 		pan.computePos();
 	}
-	
+
 
 	pan.computePos=function() {
 		var riskScale=d3.scale.linear().domain([0,5]);
 		// we give everything a default value
 		// so by default, they are all in the middle of the screen with a null radius (invisible, ready to pounce)
-		
+
 		pan.selection.forEach(function(d,i) {
 			d.pos=[{x:445,y:253,r:0,tx:445,ty:253},{x:445,y:253,r:0,tx:445,ty:253},{x:445,y:253,r:0,tx:445,ty:253},{x:445,y:253,r:0,tx:445,ty:253}];
 		})
@@ -223,7 +223,7 @@
 
 		// we set aside the tiniest circles for now else they will upset the general layout greatly.
 
-		
+
 
 		// and calculate the position of the other. 100 is arbitrary large, we may try other values.
 		// noting that there are 26 circles in the mockup, and circa 1300 data items in the dataset.
@@ -233,8 +233,8 @@
 
 
 		var c1=largeenough.map(function(d) {return srsly(d.bandwidth);})
-		
-	
+
+
 		var pos1=iPack(c1,415,445,253);
 
 		largeenough.forEach(function(d,i) {
@@ -243,12 +243,12 @@
 			pan.selection[pan.dhash[d.id]].pos[0].ty=253;
 			pan.selection[pan.dhash[d.id]].pos[0].max=415;
 		})
-		
+
 
 		// now by category
 
 		// preliminary step: we compute sizes of the various category totals
-		var catsum=d3.nest()	
+		var catsum=d3.nest()
 			.key(function(d) {return d.category;})
 			.rollup(function(d) {return d3.sum(d,function(e) {return srsly(e.bandwidth);})})
 			.map(pan.selection);
@@ -272,7 +272,7 @@
 			scat.forEach(function(d,j) {
 				var i=pan.dhash[d.id];
 				pan.selection[i].pos[1]=(pos_scat[j])
-				
+
 				//pan.selection[i].pos[1].r=pan.selection[i].pos[1].r/3
 				pan.selection[i].pos[1].tx=catxy[cat][0]
 				pan.selection[i].pos[1].ty=catxy[cat][1]
@@ -282,7 +282,7 @@
 
 		// and by tech
 		// similar first step
-		var techsum=d3.nest()	
+		var techsum=d3.nest()
 			.key(function(d) {return d.technology;})
 			.rollup(function(d) {return d3.sum(d,function(e) {return srsly(e.bandwidth);})})
 			.map(pan.selection);
@@ -330,7 +330,7 @@
 		// noting that there are 26 circles in the mockup, and circa 1300 data items in the dataset.
 
 		var largeenough=pan.selection.slice(0);
-		
+
 		// only totals for the all threats views of exploits/malware by application
 
 		/*if (d3.select("#select_dataset").property("value")!="All Threats") {
@@ -352,7 +352,7 @@
 			pan.selection[pan.dhash[d.id]].pos[0].max=415;
 		})
 
-		
+
 		// now by category
 
 		//var myselection;
@@ -363,9 +363,9 @@
 			myselection=pan.selection.slice(0).filter(function(d) {return d.category!="total";})
 			console.log("myselection.length",myselection.length)
 		}*/
-		
+
 		// preliminary step: we compute sizes of the various category totals
-		var catsum=d3.nest()	
+		var catsum=d3.nest()
 			.key(function(d) {return d.category;})
 			.rollup(function(d) {return d3.sum(d,function(e) {return (+e.detections);})})
 			.map(pan.selection);
@@ -396,7 +396,7 @@
 
 
 		// and by type
-		
+
 
 
 		// for view by type, we revert to totals for exploits/malware by application
@@ -413,7 +413,7 @@
 
 
 
-		var typesum=d3.nest()	
+		var typesum=d3.nest()
 			.key(function(d) {return d.threatType;})
 			.rollup(function(d) {return d3.sum(d,function(e) {return (+e.detections);})})
 			.map(pan.selection);
@@ -461,7 +461,7 @@
 	}
 
 	pan.gendata= function() {
-		pan.data=d3.range(500).map(function(i) 
+		pan.data=d3.range(500).map(function(i)
 			{var d={id:i,
 				region: regions[p_rand(5)],
 				application: p_rand(5),
@@ -550,7 +550,7 @@
 							sessions:d3.sum(selection,function(d) {return +d.sessions;})
 						}
 						if (isNaN(subtotal.risk)) {subtotal.risk="-";}
-						
+
 						if(subtotal.bandwidth>0) {
 							pan.data.push(subtotal);
 						}
@@ -573,10 +573,10 @@
 			})
 			pan.readthreats()
 			pan.filter(pan.criteria)
-			pan.drawview()	
+			pan.drawview()
 		})
-		
-		
+
+
 	}
 
 	pan.readthreats=function() {
@@ -619,12 +619,12 @@
 						} else {
 							selection1=selection0.filter(function(d) {return (d.threatType==t);})
 						}
-						
+
 						threatCats.concat("total").forEach(function(tc) {
 							regions.forEach(function(r) {
 							var selection,selection2;
-							selection2=selection1.filter(function(d) {return d.region==r}); 
-							 
+							selection2=selection1.filter(function(d) {return d.region==r});
+
 							if(tc!="total") {
 								selection=selection2.filter(function(d) {return d.category==tc;})
 							} else {
@@ -643,7 +643,7 @@
 								region:r,
 								detections:d3.sum(selection, function(d) {return +d.detections;}),
 								risk:"threat"
-							}	
+							}
 							if (threat.detections>0) {
 								i=i+1;
 								threat.id=i;
@@ -651,8 +651,8 @@
 							}
 						})
 					})
-			
-				})	
+
+				})
 			})
 		})
 	}
@@ -698,19 +698,19 @@
 
 		var psb=pan.svg.select("#back")
 		psb.selectAll("*").remove();
-		pan.svg.selectAll(".labels").remove();	
+		pan.svg.selectAll(".labels").remove();
 		psb.append("rect").attr({height:height,width:width}).style({fill:"black",stroke:"none"}).classed("backrect",1)
 		if(mode==0) {
 			psb.append("text").text("Size of circle indicates").attr({x:800,y:310,"text-anchor":"middle"})
 			psb.append("text").text(pan.main=="applications"?"total bandwidth occupied":"number of detections").attr({x:800,y:322,"text-anchor":"middle"})
-			
-				
+
+
 			psb.selectAll("circle").data([10,20,50]).enter().append("circle")
 				.attr({cx:800,cy:function(d) {return 440-d},r:String})
 				.style({fill:"none","stroke-width":2,stroke:"#ccc","stroke-dasharray":"2 2"})
-			
 
-		} 
+
+		}
 		if (mode==3) {
 			if(pan.main=="applications") {
 			psb.append("text").text("Frequency: Percent of Installations Where Application Appeared")
@@ -740,10 +740,10 @@
         		.attr("xlink:href",  function(d) { return d.img;})
 			// .attr("xlink:href", "https://github.com/favicon.ico")
 			.attr({
-					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-d.r},
-					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-d.r},
-					height:function(d) {return 2*d.r},
-					width:function(d) {return 2*d.r},
+					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-2*d.r},
+					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-2*d.r},
+					height:function(d) {return 4*d.r},
+					width:function(d) {return 4*d.r},
 					id:function(d) {return "c"+d.id},
 				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
 			})
@@ -765,10 +765,10 @@
 		circles=pan.svg.selectAll(".circles").data(nodes);
 
 		circles.transition().attr({
-					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-d.r},
-					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-d.r},
-					height:function(d) {return 2*d.r},
-					width:function(d) {return 2*d.r}
+					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-2*d.r},
+					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-2*d.r},
+					height:function(d) {return 4*d.r},
+					width:function(d) {return 4*d.r}
 			})
 		/* circles.transition().attr({
 					cx:function(d) {return (isNaN(d.x)?d.tx:d.x)-d.r},
@@ -781,7 +781,7 @@
 			   	return d3.scale.linear().domain([0,.8*d3.max(nodes,function(d) {return d.detections})]).range([.3,.9])(+d.detections);
 			   }}
 		}) */
-		
+
 		if(mode==1) {
 				pan.svg.selectAll(".labels").data(pan.main=="applications"?categories:threatCats).enter().append("text")
 					.text(String).classed("labels",1)
@@ -805,9 +805,9 @@
 					{label:"",value:d.name,title:true},
 					{label:"Bandwidth:",value:d3.format(",")(+d.bandwidth)},
 					{label:"HD movies equivalent:",value:d3.format(",")(+d.hd)},
-					{label:"% of total bandwidth:",value:d3.format("4.2%")(+d.bandwidth/pan.totalB)},	
+					{label:"% of total bandwidth:",value:d3.format("4.2%")(+d.bandwidth/pan.totalB)},
 					{label:"Sessions consumed:",value:d3.format(",")(+d.sessions)},
-					{label:"% of total sessions:",value:d3.format("4.2%")(+d.sessions/pan.totalS)},	
+					{label:"% of total sessions:",value:d3.format("4.2%")(+d.sessions/pan.totalS)},
 					{label:"# of apps:",value:+d.count}
 				];
 				}
@@ -817,9 +817,9 @@
 					{label:"Job title",value:d.ports},
 					{label:"Bandwidth:",value:d3.format(",")(+d.bandwidth)},
 					{label:"HD movies equivalent:",value:d3.format(",")(+d.hd)},
-					{label:"% of total bandwidth:",value:d3.format("4.2%")(+d.bandwidth/pan.totalB)},	
+					{label:"% of total bandwidth:",value:d3.format("4.2%")(+d.bandwidth/pan.totalB)},
 					{label:"Sessions consumed:",value:d3.format(",")(+d.sessions)},
-					{label:"% of total sessions:",value:d3.format("4.2%")(+d.sessions/pan.totalS)},	
+					{label:"% of total sessions:",value:d3.format("4.2%")(+d.sessions/pan.totalS)},
 					{label:"Frequency of use:",value:isNaN(d.frequency)?"-":d3.format("4.2%")(+d.frequency)}
 
 				];	}
@@ -845,10 +845,10 @@
 			} else {
 				xy[1]=d3.select("#"+pan.id).property("offsetTop")+d.y-d.r+30;
 			}
-			
+
 			pan.panel.transition().style({top:xy[1]+"px",left:xy[0]+"px",display:"block",width:"200px"});
 		})
-		
+
 		circles.on("mouseover",function(d) {
 			d3.select(this).style("stroke","white");
 		})
@@ -874,14 +874,14 @@
 					cy:function(d) {return d.y}})
 					}*/
 				if(pan.tick>0) {circles.attr({
-					
+
 					x:function(d) {return d.x},
 					y:function(d) {return d.y}})
 					// cx:function(d) {return d.x},
 					// cy:function(d) {return d.y}})
 					}
 					//.each(draw)
-				
+
 			}
 
 			function gravity(k) {
@@ -926,12 +926,12 @@
 			function draw(d) {
 				var max=d.max/2,x=d.x,y=d.y,cx=d.tx,cy=d.ty;
 				var dist=Math.sqrt((x-cx)*(x-cx)+(y-cy)*(y-cy))
-				
+
 				if (dist>max) {
 					x=cx+(max/dist)*(x-cx);
 					y=cy+(max/dist)*(y-cy);
 				}
-				d3.select(this).attr({cx:x,cy:y}) 
+				d3.select(this).attr({cx:x,cy:y})
 			}
 
 			function bind(node) {
@@ -942,7 +942,7 @@
 				if (d>max) {
 					node.x=node.tx+(max/d)*(node.x/node.tx);
 					node.y=node.ty+(max/d)*(node.y/node.ty);
-						
+
 				}
 			}
 			pan.force
@@ -953,7 +953,7 @@
 				.start();
 			//circles=pan.svg.selectAll(".circles").data(nodes);
 			/*pan.force.on("end",function() {circles.transition().attr({cx:function(d) {return d.x;},cy:function(d) {return d.y;}})})*/
-			
+
 
 		}
 
@@ -963,7 +963,7 @@
 pan.setInterface = function() {
 		if(!d3.select("#select_dataset").property("value")) {d3.select("#select_dataset").select("option").property("selected",true);}
 		if(!d3.select("#select_region").property("value")) {d3.select("#select_region").select("option").property("selected",true);}
-		
+
 
 		d3.select("#data_left").select("h2").html([
 			"Application Bandwidth",
@@ -982,7 +982,7 @@ pan.setInterface = function() {
 		d3.select("#data_right").selectAll("p").data(interface.leftPan[pan.main]).enter().insert("p","br");
 		d3.select("#data_right").selectAll("p").html(function(d) {return '<span class="field">'+d+'</span>&nbsp;<span class="value"></span>';});
 
-		
+
      	d3.select("#view_selection").selectAll("a").data(interface.buttons[pan.main]).exit().remove();
      	d3.select("#view_selection").selectAll("a").data(interface.buttons[pan.main]).enter().append("a");
      	d3.select("#view_selection").selectAll("a")
@@ -990,7 +990,7 @@ pan.setInterface = function() {
      		.attr({	href:"#",
      				id:function(d) {return d.id;},
      				"class":function(d,i) {return "btn"+((i==pan.mode)?" active":"");}
-     			});		
+     			});
 
      	d3.selectAll("#all-app,#all-thr").on("click",function() {
 			d3.select("#view_selection").selectAll("a").classed("active",0);
@@ -1043,7 +1043,7 @@ pan.setInterface = function() {
 		if(d3.select("#select_dataset").property("value")==="Applications by Subcategory") {
 			d3.selectAll("#tec-app,#fre-app").classed("disabled",1);
 		}
-				
+
 
      	if (pan.main=="applications") {
      		delete pan.criteria["severityVal"]
@@ -1059,7 +1059,7 @@ pan.setInterface = function() {
      				.html("<strong>Application Risk Factor</strong></br>The individual application risk factor is a subjective assessment that is calculated using the following eight behavioral characteristics: <ol><li>Can it transfer files?</li><li>Is it known to propagate malware?</li><li>Does it regularly consume more than 1 Mbps through normal use?</li><li>Is it purposely evasive?</li><li>Has been widely deployed?</li><li>Does it have known vulnerabilities?</li><li>Is it prone to misuse or easily configured to expose more than intended?</li><li>Can it tunnel other applications?</li></ol> The individual behavioral characteristics and the resulting risk factor provides security administrators with more information on how the application operates, the potential risks to the business and can be used as a mechanism for policy creation.</br></br><strong>Application Frequency</strong></br>This is determined by the number of organizations where the application was in use by any number of users.</br></br><strong>Application Taxonomy</strong></br>Palo Alto Networks application taxonomy is broken down into 5 application categories, 26 subcategories and the 4 underlying technologies.")
      		})
      		d3.selectAll(".risk").on("click",function(d,i) {
-			
+
 			if(i==5) {
 				delete pan.criteria["risk"]
 				pan.risk="All"
@@ -1106,7 +1106,7 @@ pan.setInterface = function() {
 	}
 
 	pan.view = function(options) {
-		
+
 		pan.id=options.id||"chart";
 		pan.appfile=options.appfile||"includes/data.csv";
 		pan.threatfile=options.threatfile||"includes/threats.csv";
@@ -1118,7 +1118,7 @@ pan.setInterface = function() {
 		pan.charge=options.charge||-1;
 		pan.collide=options.collide||0.5;
 
-				
+
 		pan.svg=d3.select("#"+pan.id).selectAll("svg").data([0]).enter()
 			.append("svg").attr({width:pan.width,height:pan.height})
 		pan.svg.selectAll("*").remove();
@@ -1140,13 +1140,13 @@ pan.setInterface = function() {
 				"background-color":"white",
 				"box-shadow":"0px 0px 5px #AAA",
 				"z-index":"100",
-				border:"0px solid #5D584F" 
+				border:"0px solid #5D584F"
 			})
 		pan.force = d3.layout.force()
 			    .charge(0)
 			    .gravity(0)
 			    .size([pan.width, pan.height]);
-		
+
 		pan.criteria={region:"global"}
 		pan.totalB=1;
 		pan.totalS=1;
@@ -1159,7 +1159,7 @@ pan.setInterface = function() {
 		d3.select("#select_dataset").select("option").property("selected",true)
 		d3.select("#select_region").select("option").property("selected",true)
 		pan.setInterface();
-	
+
 		d3.select("#select_region").property("value","All").on("change",function() {
 			// d3.select("#sidebar").selectAll("a").classed("active",0)
 			var v=d3.select(this).property("selectedIndex");
@@ -1191,7 +1191,7 @@ pan.setInterface = function() {
 								d3.select("#all-app").classed("active",1);
 							}
 						} else {
-							d3.selectAll("#tec-app,#fre-app").classed("disabled",0);	
+							d3.selectAll("#tec-app,#fre-app").classed("disabled",0);
 						}
 					pan.filter(pan.criteria);
 					pan.drawview(pan.mode);
