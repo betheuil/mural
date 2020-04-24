@@ -545,6 +545,7 @@
 							category:c,
 							technology:t,
 							region:r,
+							img:img,
 							bandwidth:d3.sum(selection,function(d) {return +d.bandwidth;}),
 							hd:d3.sum(selection,function(d) {return +d.hd;}),
 							risk:d3.round(d3.mean(selection,function(d) {return +d.risk})),
@@ -564,6 +565,7 @@
 							count:small.length,
 							technology:t,
 							region:r,
+							img:img,
 							bandwidth:d3.sum(small,function(d) {return +d.bandwidth;}),
 							hd:d3.sum(small,function(d) {return +d.hd;}),
 							risk:d3.round(d3.mean(small,function(d) {return +d.risk})),
@@ -686,11 +688,11 @@
 
 			if(nodes[i].height) {
 				nodes[i].height=pan.selection[i].pos[0].height;
-				if(nodes[i].height<pan.minrad) {nodes[i].r=pan.minrad;}
-				if(nodes[i].height>pan.maxrad) {nodes[i].r=pan.maxrad;}
+				if(nodes[i].height<pan.minrad) {nodes[i].height=pan.minrad;}
+				if(nodes[i].height>pan.maxrad) {nodes[i].height=pan.maxrad;}
 				nodes[i].width=pan.selection[i].pos[0].width;
-				if(nodes[i].width<pan.minrad) {nodes[i].r=pan.minrad;}
-				if(nodes[i].width>pan.maxrad) {nodes[i].r=pan.maxrad;}
+				if(nodes[i].width<pan.minrad) {nodes[i].width=pan.minrad;}
+				if(nodes[i].width>pan.maxrad) {nodes[i].width=pan.maxrad;}
 			};
 
 			/*
