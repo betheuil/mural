@@ -740,10 +740,10 @@
         		.attr("xlink:href",  function(d) { return d.img;})
 			// .attr("xlink:href", "https://github.com/favicon.ico")
 			.attr({
-					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-2*d.r},
-					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-2*d.r},
-					height:function(d) {return 4*d.r},
-					width:function(d) {return 4*d.r},
+					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-2.5*d.r},
+					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-2.5*d.r},
+					height:function(d) {return 5*d.r},
+					width:function(d) {return 5*d.r},
 					id:function(d) {return "c"+d.id},
 				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
 			})
@@ -765,10 +765,10 @@
 		circles=pan.svg.selectAll(".circles").data(nodes);
 
 		circles.transition().attr({
-					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-2*d.r},
-					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-2*d.r},
-					height:function(d) {return 4*d.r},
-					width:function(d) {return 4*d.r}
+					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-2.5*d.r},
+					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-2.5*d.r},
+					height:function(d) {return 5*d.r},
+					width:function(d) {return 5*d.r}
 			})
 		/* circles.transition().attr({
 					cx:function(d) {return (isNaN(d.x)?d.tx:d.x)-d.r},
