@@ -232,7 +232,7 @@
 		largeenough.sort(function(a,b) {return b.bandwidth-a.bandwidth}).slice(0,100);
 
 
-		var c1=largeenough.map(function(d) {return srsly(d.bandwidth);})
+		var c1=largeenough.map(function(d) {return d.bandwidth;})
 
 
 		var pos1=iPack(c1,415,445,253);
@@ -250,7 +250,7 @@
 		// preliminary step: we compute sizes of the various category totals
 		var catsum=d3.nest()
 			.key(function(d) {return d.category;})
-			.rollup(function(d) {return d3.sum(d,function(e) {return srsly(e.bandwidth);})})
+			.rollup(function(d) {return d3.sum(d,function(e) {return e.bandwidth;})})
 			.map(pan.selection);
 
 		// {"Networking":10000, "Media":25000, "General Internet":5000, "Collaboration":100000, "Business system",50000}
@@ -267,7 +267,7 @@
 		categories.forEach(function(cat) {
 			riskScale.range(catxy[cat][1]-catsum3[cat]/2,catxy[cat][1]+catsum3[cat]/2)
 			var scat=pan.selection.filter(function(d) {return d.category==cat;})
-			var scat_val=scat.map(function(d) {return srsly(d.bandwidth);})
+			var scat_val=scat.map(function(d) {return d.bandwidth;})
 			var pos_scat=iPack(scat_val,catsum3[cat],catxy[cat][0],catxy[cat][1]);
 			scat.forEach(function(d,j) {
 				var i=pan.dhash[d.id];
@@ -284,7 +284,7 @@
 		// similar first step
 		var techsum=d3.nest()
 			.key(function(d) {return d.technology;})
-			.rollup(function(d) {return d3.sum(d,function(e) {return srsly(e.bandwidth);})})
+			.rollup(function(d) {return d3.sum(d,function(e) {return e.bandwidth;})})
 			.map(pan.selection);
 
 		// {"Networking":10000, "Media":25000, "General Internet":5000, "Collaboration":100000, "Business system",50000}
@@ -299,7 +299,7 @@
 
 		technologies.forEach(function(tech) {
 			var stech=pan.selection.filter(function(d) {return d.technology==tech;})
-			var stech_val=stech.map(function(d) {return srsly(d.bandwidth);})
+			var stech_val=stech.map(function(d) {return d.bandwidth;})
 			var pos_stech=iPack(stech_val,techsum3[tech],techxy[tech][0],techxy[tech][1]);
 			stech.forEach(function(d,j) {
 				var i=pan.dhash[d.id];
@@ -320,7 +320,7 @@
 
 
 		pan.selection.forEach(function(d) {
-			d.pos[3]=({x:xScale(d.frequency), height:rScale(srsly(d.bandwidth)), width:rScale(srsly(d.bandwidth)), y:yScale[d.category]})
+			d.pos[3]=({x:xScale(d.frequency), height:rScale(d.bandwidth), width:rScale(d.bandwidth), y:yScale[d.category]})
 		})
 		} else {
 
@@ -468,7 +468,7 @@
 				category: categories[p_rand(5)],
 				technology: technologies[p_rand(4)],
 				frequency: 10+p_rand(80),
-				bandwidth: (10+p_rand(900))*(10+p_rand(900)),
+				bandwidth: 1,
 				risk:p_rand(7)+1
 			};
 			return d;
