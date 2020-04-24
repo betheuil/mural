@@ -1,34 +1,4 @@
 frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of regional sessions,category,subcategory,technology,risk,ports,img
-0.047,REC,Henry Darby,0,0,0,0,0,media,audio-streaming,browser-based,3,Senior Associate,photos/Henry Darby.png
-0.007,REC,Hugh Dullage,0,0,0,0,0,media,audio-streaming,client-server,7,Director,photos/Hugh Dullage.png
-0.007,REC,Hugo Clark,0,0,0,0,0,media,audio-streaming,client-server,7,Director,photos/Hugo Clark.png
-0.177,REC,James Daniell,0,0,0,0,0,media,audio-streaming,browser-based,6,Assistant Director,photos/James Daniell.png
-0.03,REC,Joao Fonte,0,0,0,0,0,media,audio-streaming,client-server,4,Assistant Manager,photos/Joao Fonte.png
-0.003,REC,Jon Morley,0,0,0,0,0,business-systems,database,client-server,5,Manager,photos/Jon Morley.png
-0.271,REC,Jonathan Eley,0,0,0,0,0,media,audio-streaming,client-server,5,Manager,photos/Jonathan Eley.png
-0.171,REC,Kate Bossie,0,0,0,0,0,media,audio-streaming,browser-based,5,Manager,photos/Kate Bossie.png
-0,REC,Katie Lowry,0,0,0,0,0,custom,custom,custom,7,Director,photos/Katie Lowry.png
-0.003,REC,Leonie Baker,0,0,0,0,0,media,audio-streaming,client-server,6,Assistant Director,photos/Leonie Baker.png
-0.488,REC,Lizzy Drake,0,0,0,0,0,media,audio-streaming,browser-based,5,Manager,photos/Lizzy Drake-Sloane.png
-0.003,REC,Loh Tan,0,0,0,0,0,collaboration,email,browser-based,6,Assistant Director,photos/Loh Tan.png
-0.127,REC,Louise McNabb,0,0,0,0,0,business-systems,database,client-server,3,Senior Associate,photos/Louise McNabb.png
-0.365,REC,Lucy Powell,0,0,0,0,0,business-systems,database,client-server,1,Executive Assistant,photos/Lucy Powell.png
-0.09,REC,Luke Duerden,0,0,0,0,0,media,audio-streaming,browser-based,5,Manager,photos/Luke Duerden.png
-0.037,REC,Matt X Cave,0,0,0,0,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Matt Cave.png
-0.003,REC,Max Eisner,0,0,0,0,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Max Eisner.png
-0.02,REC,Maysera Al-Abdulla,0,0,0,0,0,media,audio-streaming,client-server,4,Assistant Manager,photos/Maysera Al-Abdulla.png
-0.298,REC,Michael Crook,0,0,0,0,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Michael Crook.png
-0.003,REC,Michael Folan,0,0,0,0,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Michael Folan.png
-0.234,REC,Mike White,0,0,0,0,0,collaboration,email,browser-based,6,Assistant Director,photos/Mike White.png
-0.441,REC,Nic Hartley,0,0,0,0,0,business-systems,auth-service,client-server,7,Director,photos/Nic Hartley.png
-0.01,REC,Nicholas Green,0,0,0,0,0,media,audio-streaming,browser-based,5,Manager,photos/Nick Green.png
-0.284,REC,Nigel Shilton,0,0,0,0,0,collaboration,email,browser-based,8,Partner,photos/Nigel Shilton.png
-0.017,REC,Peter Simon,0,0,0,0,0,collaboration,email,client-server,6,Assistant Director,photos/Peter Simon.png
-0.01,REC,Rebecca Bell,0,0,0,0,0,media,audio-streaming,browser-based,5,Manager,photos/Rebecca Bell.png
-0.017,REC,Richard A Lewis,0,0,0,0,0,business-systems,auth-service,client-server,6,Assistant Director,photos/Richard Lewis.png
-0.284,REC,Robert Scopes,0,0,0,0,0,business-systems,email,browser-based,8,Partner,photos/Robert Scopes.png
-0.06,REC,Rosie Barnes,0,0,0,0,0,media,audio-streaming,browser-based,3,Senior Associate,photos/Rosie Barnes.png
-0.017,REC,Russell McMillan,0,0,0,0,0,business-systems,database,client-server,8,Partner,photos/Russell McMillan.png
 0.003,REC,Sarah Hall,2.76E+11,0.014492754,1,1,0,media,audio-streaming,browser-based,1,Executive Assistant,photos/Sarah Hall.png
 0.181,REC,Scott Dudley,2.76E+11,0.014492754,1,260917,0,media,audio-streaming,client-server,7,Director,photos/Scott Dudley.png
 0.234,REC,Serkan Tatar,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,5,Manager,photos/Serkan Tatar.png
