@@ -685,11 +685,11 @@
 
 			if(nodes[i].height) {
 				nodes[i].height=pan.selection[i].pos[0].height;
-				if(nodes[i].height<pan.minheight) {nodes[i].r=pan.minheight;}
-				if(nodes[i].height>pan.maxheight) {nodes[i].r=pan.maxheight;}
+				if(nodes[i].height<pan.minrad) {nodes[i].r=pan.minrad;}
+				if(nodes[i].height>pan.maxrad) {nodes[i].r=pan.maxrad;}
 				nodes[i].width=pan.selection[i].pos[0].width;
-				if(nodes[i].width<pan.minwidth) {nodes[i].r=pan.minwidth;}
-				if(nodes[i].width>pan.maxwidth) {nodes[i].r=pan.maxwidth;}
+				if(nodes[i].width<pan.minrad) {nodes[i].r=pan.minrad;}
+				if(nodes[i].width>pan.maxrad) {nodes[i].r=pan.maxrad;}
 			};
 
 			/*
