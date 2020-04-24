@@ -740,10 +740,10 @@
         		.attr("xlink:href",  function(d) { return d.img;})
 			// .attr("xlink:href", "https://github.com/favicon.ico")
 			.attr({
-					x:function(d) {return isNaN(d.x)?d.tx:d.x},
-					y:function(d) {return isNaN(d.y)?d.ty:d.y},
-					height:function(d) {return d.r},
-					width:function(d) {return d.r},
+					x:function(d) {return (isNaN(d.x)?d.tx:d.x)-d.r},
+					y:function(d) {return (isNaN(d.y)?d.ty:d.y)-d.r},
+					height:function(d) {return 2*d.r},
+					width:function(d) {return 2*d.r},
 					id:function(d) {return "c"+d.id},
 				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
 			})
