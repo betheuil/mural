@@ -38,11 +38,9 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.234,REC,Vanessa Vergallo,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,1,Executive Assistant,photos/Vanessa Vergallo.png
 0.003,REC,Victoria Smith,2.76E+11,0.014492754,1,4,0,collaboration,email,browser-based,8,Partner,photos/Vicky Smith.png
 0.033,REC,Adam Rigby,2.76E+11,0.014492754,1,3590300,0,business-systems,database,browser-based,6,Assistant Director,photos/Adam Rigby.png
-0.161,REC,Alex Petrelis,2.76E+11,0.014492754,1,155030,0,business-systems,database,client-server,6,Assistant Director,photos/Alex Petrelis.png
 0.054,REC,Alexander Marx,2.76E+11,0.014492754,1,634124,0,business-systems,database,client-server,4,Assistant Manager,photos/Alexander Marx.png
 0.234,REC,Alexandros Tsarouchis,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director,photos/Alexandros Tsarouchis.png
 0.612,REC,Alice Bak,2.76E+11,0.014492754,1,17360,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Alice Bak.png
-0.023,REC,Alistair Davies,2.76E+11,0.014492754,1,141,0,media,audio-streaming,browser-based,7,Director,photos/Alistair Davies.png
 0.007,REC,Alister Hirst,2.76E+11,0.014492754,1,457,0,business-systems,auth-service,client-server,6,Assistant Director,photos/Alister Hirst.png
 0.308,REC,Andrew Carey,2.76E+11,0.014492754,1,24205,0,media,audio-streaming,client-server,8,Partner,photos/Andrew Carey.png
 0.104,REC,Ben Brooks,2.76E+11,0.014492754,1,997,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Ben Brooks.png
@@ -66,4 +64,4 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.003,REC,Greg Salisbury,2.76E+11,0.014492754,1,82,0,collaboration,email,browser-based,4,Assistant Manager,photos/Greg Salisbury.png
 0.385,REC,Guy Palmer,2.76E+11,0.014492754,1,97748,0,business-systems,database,client-server,8,Partner,photos/Guy Palmer.png
 0.003,REC,Haroon Akram,2.76E+11,0.014492754,1,4,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Haroon Akram.png
-0.003,REC,Harriet Lee,2.76E+11,0.014492754,1,32,0,business-systems,auth-service,client-server,4,Assistant Manager,photos/Harriet Lee.png
+0.003,REC,Harriet Lee,2.76E+11,0.014492754,1,32,0,business-systems,auth-service,client-server,4,Assistant Manager,photos/Harriett Lee.png
