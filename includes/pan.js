@@ -46,7 +46,7 @@
 	var threatxy={"exploit":[306,250],"malware":[612,250]};
 	var p_rand=function(n) {return Math.floor(Math.random()*n);}
 
-	var srsly=function(b) {return Math.floor(+b/1000000)} // the packing function is not good with very large numbers.
+	var srsly=function(b) {return Math.floor(+b/10)} // the packing function is not good with very large numbers.
 	var threatByApp = function() {return (d3.select("#select_dataset").property("value")!=="All Threats")}
 	var present=function(number,option) {	// sensible options to write numbers. works rather well for small or large numbers alike.
 		if(option==="%") {
