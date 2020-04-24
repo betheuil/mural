@@ -16,7 +16,7 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.01,REC,Christian Betheuil,2.76E+11,0.014492754,1,203,0,media,audio-streaming,client-server,5,Manager,photos/Christian Betheuil.png
 0.003,REC,Claire Handby,2.76E+11,0.014492754,1,5,0,media,audio-streaming,browser-based,7,Director,photos/Claire Handby.png
 0.003,REC,Clare Bridger,2.76E+11,0.014492754,1,5,0,media,audio-streaming,browser-based,7,Director,photos/Clare Bridger.png
-0.324,REC,Claire O'Shaughnessy,2.76E+11,0.014492754,1,16989399,0.001,business-systems,database,client-server,7,Director,photos/Claire O'Shaughnessy.png
+0.324,REC,Claire O'Shaughnessy,2.76E+11,0.014492754,1,16989399,0.001,business-systems,database,client-server,7,Director,photos/Claire O\'Shaughnessy.png
 0.234,REC,Daniyal Zafar,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,2,Associate,photos/Daniyal Zafar.png
 0.017,REC,David Merrick,2.76E+11,0.014492754,1,8251,0,business-systems,database,client-server,6,Assistant Director,photos/David Merrick.png
 0.003,REC,Eleanor Burrill,2.76E+11,0.014492754,1,14,0,media,audio-streaming,client-server,4,Assistant Manager,photos/Eleanor Burrill.png
