@@ -211,7 +211,7 @@
 
 
 	pan.computePos=function() {
-		var riskScale=d3.scale.linear().domain([0,5]);
+		var riskScale=d3.scale.linear().domain([1,8]);
 		// we give everything a default value
 		// so by default, they are all in the middle of the screen with a null radius (invisible, ready to pounce)
 
@@ -320,7 +320,7 @@
 
 
 		pan.selection.forEach(function(d) {
-			d.pos[3]=({x:xScale(d.frequency), height:rScale(d.bandwidth), width:rScale(d.bandwidth), y:yScale[d.category]})
+			d.pos[3]=({x:xScale(d.frequency), height:1, width:1, y:yScale[d.category]})
 		})
 		} else {
 
@@ -453,7 +453,7 @@
 		yScale["0"]=-200;yScale["custom-tcp"]=-200,yScale["custom-udp"]=-200; // shouldn't be required, but can't hurt
 
 		pan.selection.forEach(function(d) {
-			d.pos[3]=({x:xScale(Math.random()), height:rScale((d.detections)), width:rScale((d.detections)), y:yScale[d.category]})
+			d.pos[3]=({x:xScale(Math.random()), height:1, width:1, y:yScale[d.category]})
 		})
 
 		}
@@ -671,7 +671,7 @@
 			})
 			if (pan.strata&&mode<3) {
 				nodes[i].x=((Math.random()-.5)*d.max+d.tx||d.tx);
-				nodes[i].y=((d3.scale.linear().range([d.ty-d.max/2,d.ty+d.max/2]).domain([5,0])(+d.risk||0))||d.ty);
+				nodes[i].y=((d3.scale.linear().range([d.ty-d.max/2,d.ty+d.max/2]).domain([8,1])(+d.risk||0))||d.ty);
 			}
 			pan.nodes1=nodes.slice(0);
 			if(pan.main==="threats"&&threatByApp()) {
@@ -700,7 +700,7 @@
 				if(nodes[i].r>pan.maxrad) {nodes[i].r=pan.maxrad;}
 			}; */
 		})
-		nodes.sort(function(a,b) {return b.r-a.r;});
+		nodes.sort(function(a,b) {return b.height-a.height;});
 		// updating written info
 		d3.select("#data_left").selectAll(".value").data(pan.dataLeft).html(String)
 		d3.select("#data_right").selectAll(".value").data(pan.dataRight).html(String)
