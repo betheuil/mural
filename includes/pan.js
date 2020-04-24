@@ -737,7 +737,8 @@
 		circles.enter()
 			.append("image")
 			// .append("circle")
-			.attr("xlink:href", "https://github.com/favicon.ico")
+        		.attr("xlink:href",  function(d) { return d.img;})
+			// .attr("xlink:href", "https://github.com/favicon.ico")
 			.attr({
 					x:function(d) {return isNaN(d.x)?d.tx:d.x},
 					y:function(d) {return isNaN(d.y)?d.ty:d.y},
