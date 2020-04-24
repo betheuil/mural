@@ -766,13 +766,13 @@
 					id:function(d) {return "c"+d.id},
 				 "class":function(d) {return "circles cat"+d.category+" tech"+d.technology}
 			}) */
-			/* .style({
+			 .style({
 				stroke:"none",
 				 fill:function(d) {return riskColors[d.risk]},
 			   "fill-opacity":function(d) {if (!d.severity) {return .9;} else {
 			   	//return {"medium":.2,"high":.5,"critical":9}[d.severity];
 			   	return d3.scale.linear().domain([0,.8*d3.max(nodes,function(d) {return d.detections})]).range([.3,.9])(+d.detections);
-			   }}}) */
+			   }}})
 
 		circles=pan.svg.selectAll(".circles").data(nodes);
 
