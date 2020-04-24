@@ -23,7 +23,7 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.669,REC,Gareth D Jones,1,0.014492754,1,106454633,0.008,business-systems,auth-service,client-server,6,Assistant Director,photos/Gareth Jones.png
 0.863,REC,Georgina Botterill,1,0.014492754,1,1234209,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Georgina Botterill.png
 0.003,REC,Haroon Akram,1,0.014492754,1,4,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Haroon Akram.png
-0.177,REC,James Daniell,1,0.014492754,1,27597,0,media,audio-streaming,browser-based,6,Assistant Director,photos/James Daniell.png
+0.177,REC,James Daniell,0,0.014492754,1,27597,0,media,audio-streaming,browser-based,6,Assistant Director,photos/James Daniell.png
 0.003,REC,Leonie Baker,1,0.014492754,1,1,0,media,audio-streaming,client-server,6,Assistant Director,photos/Leonie Baker.png
 0.003,REC,Loh Tan,1,0.014492754,1,92,0,collaboration,email,browser-based,6,Assistant Director,photos/Loh Tan.png
 0.037,REC,Matt X Cave,1,0.014492754,1,354,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Matt Cave.png
