@@ -19,7 +19,7 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.324,REC,Claire O'Shaughnessy,2.76E+11,0.014492754,1,16989399,0.001,business-systems,database,client-server,7,Director,photos/Claire O Shaughnessy.png
 0.234,REC,Daniyal Zafar,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,2,Associate,photos/Daniyal Zafar.png
 0.017,REC,David Merrick,2.76E+11,0.014492754,1,8251,0,business-systems,database,client-server,6,Assistant Director,photos/David Merrick.png
-0.003,REC,Eleanor Burrill,2.76E+11,0.014492754,1,14,0,media,audio-streaming,client-server,4,Assistant Manager,photos/Michael Folan.png
+0.003,REC,Eleanor Burrill,2.76E+11,0.014492754,1,14,0,media,audio-streaming,client-server,4,Assistant Manager,photos/Eleanor Burrill.png
 0.043,REC,Francisco Rubio,2.76E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager,photos/Francisco Rubio.png
 0.043,REC,Frances Treeby,2.76E+11,0.014492754,1,96777,0,business-systems,database,client-server,5,Manager,photos/Frances Treeby.png
 0.669,REC,Gareth D Jones,2.76E+11,0.014492754,1,106454633,0.008,business-systems,auth-service,client-server,6,Assistant Director,photos/Gareth Jones.png
@@ -47,8 +47,8 @@ frequency,region,application,bandwidth,% of regional bandwidth,hd,sessions,% of 
 0.037,REC,Matt X Cave,2.76E+11,0.014492754,1,354,0,media,audio-streaming,browser-based,6,Assistant Director,photos/Matt Cave.png
 0.003,REC,Max Eisner,2.76E+11,0.014492754,1,1,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Max Eisner.png
 0.02,REC,Maysera Al-Abdulla,2.76E+11,0.014492754,1,601,0,media,audio-streaming,client-server,4,Assistant Manager,photos/Maysera Al-Abdulla.png
-0.298,REC,Michael Crook,2.76E+11,0.014492754,1,11129,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Michael Crook.png
-0.003,REC,Michael Folan,2.76E+11,0.014492754,1,14,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Michael Folan.png
+0.298,REC,Michael Crook,2.76E+11,0.014492754,1,11129,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Michael Folan.png
+0.003,REC,Michael Folan,2.76E+11,0.014492754,1,14,0,media,audio-streaming,browser-based,4,Assistant Manager,photos/Eleanor Burrill.png
 0.234,REC,Mike White,2.76E+11,0.014492754,1,1031222,0,collaboration,email,browser-based,6,Assistant Director,photos/Mike White.png
 0.441,REC,Nic Hartley,2.76E+11,0.014492754,1,13036011,0.001,business-systems,auth-service,client-server,7,Director,photos/Nic Hartley.png
 0.01,REC,Nicholas Green,2.76E+11,0.014492754,1,41,0,media,audio-streaming,browser-based,5,Manager,photos/Nick Green.png
