@@ -188,7 +188,7 @@
 			pan.selection=pan.selection.filter(function(d) {return d.name!=="0";})
 
 			if (d3.select("#select_dataset").property("value")=="All Threats") {
-				pan.selection=pan.selection.slice(0).sort(function(a,b) {return b.detections-a.detections}).slice(0,250)
+				pan.selection=pan.selection.slice(0).sort(function(a,b) {return b.detections-a.detections}).slice(0,10)
 			} else {
 				var top25=pan.selection.filter(function(d) {return d.category=="total";}).slice(0).sort(function(a,b) {return b.detections-a.detections;}).slice(0,25).map(function(d) {return d.application;})
 //				pan.selection=pan.selection.filter(function(d) {return top25.indexOf(d.application)>-1&&d.category!="total";})
@@ -229,7 +229,7 @@
 		// noting that there are 26 circles in the mockup, and circa 1300 data items in the dataset.
 
 		var largeenough=pan.selection.slice(0);
-		largeenough.sort(function(a,b) {return b.bandwidth-a.bandwidth}).slice(0,100);
+		largeenough.sort(function(a,b) {return b.bandwidth-a.bandwidth}).slice(0,10);
 
 
 		var c1=largeenough.map(function(d) {return d.bandwidth;})
